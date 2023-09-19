@@ -1,0 +1,109 @@
+//reset css
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//variables
+$primary-color: linear-gradient(to right, #FE34B9, #903AFF);
+$bg-color: #150E28;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Unica+One&display=swap');
+
+$font-family: Montserrat, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+html {
+
+    body {
+        max-width: 1440px;
+        height: 1000px;
+        margin: 0 auto;
+        color: white;
+        font-family: $font-family ;
+        background: $bg-color;
+        background-repeat: no-repeat;
+
+        header {
+
+            .hamburger-menu {
+
+                .hamburger {
+                    position: absolute;
+                    cursor: pointer;
+                    @include transition-ease;
+                    background-color: white;
+
+                    &::before {
+                        content: "";
+                        width: 19px;
+                        position: absolute;
+                        bottom: 10px;
+                        border-radius: 10px;
+                        height: 5px;
+                        background-color: white;
+                    }
+
+                    &::after {
+                        content: "";
+                        width: 19px;
+                        position: absolute;
+                        top: 10px;
+                        border-radius: 10px;
+                        right: 0;
+                        height: 5px;
+                        background-color: white;
+                    }
+
+                    &.open {
+                        @include transition-ease;
+                        transform: rotate(180deg);
+                        background: transparent;
+
+                        &::before {
+                            width: 28px;
+                            transform: rotate(45deg) translate(9px, 0px);
+                        }
+
+                        &::after {
+                            width: 28px;
+                            transform: rotate(-45deg) translate(7px, -11px);
+                        }
+
+                    }
+                }
+            }
+
+            .mobile-nav{
+                @include transition-ease;
+                visibility: hidden;
+                transform: translateY(-100%);
+
+                &.open{
+                    visibility: visible;
+                    @include transition-ease;
+                    transform: translateY(0);
+                }
+            }
+        }
+
+        main {
+
+            .hero-section {
+
+                .hero-left {
+
+                    .timer{
+                        font-family: 'Unica One';
+                    }
+                }
+            }
+        }
+    }
+}

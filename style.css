@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Unica+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  max-width: 1440px;
+  height: 1000px;
+  margin: 0 auto;
+  color: white;
+  font-family: Montserrat, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: #150E28;
+  background-repeat: no-repeat;
+}
+html body header .hamburger-menu .hamburger {
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  background-color: white;
+}
+html body header .hamburger-menu .hamburger::before {
+  content: "";
+  width: 19px;
+  position: absolute;
+  bottom: 10px;
+  border-radius: 10px;
+  height: 5px;
+  background-color: white;
+}
+html body header .hamburger-menu .hamburger::after {
+  content: "";
+  width: 19px;
+  position: absolute;
+  top: 10px;
+  border-radius: 10px;
+  right: 0;
+  height: 5px;
+  background-color: white;
+}
+html body header .hamburger-menu .hamburger.open {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(180deg);
+  background: transparent;
+}
+html body header .hamburger-menu .hamburger.open::before {
+  width: 28px;
+  transform: rotate(45deg) translate(9px, 0px);
+}
+html body header .hamburger-menu .hamburger.open::after {
+  width: 28px;
+  transform: rotate(-45deg) translate(7px, -11px);
+}
+html body header .mobile-nav {
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+  transform: translateY(-100%);
+}
+html body header .mobile-nav.open {
+  visibility: visible;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(0);
+}
+html body main .hero-section .hero-left .timer {
+  font-family: "Unica One";
+}/*# sourceMappingURL=style.css.map */
