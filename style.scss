@@ -31,6 +31,10 @@ html {
         background-repeat: no-repeat;
 
         header {
+            position: sticky;
+            background: $bg-color;
+            z-index: 30;
+            top: 0;
 
             .hamburger-menu {
 
@@ -77,7 +81,11 @@ html {
                         }
 
                     }
-                }
+
+                    &.open-fixed{
+                        position: fixed;
+                    }
+                }                              
             }
 
             .mobile-nav{

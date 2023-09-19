@@ -15,6 +15,12 @@ html body {
   background: #150E28;
   background-repeat: no-repeat;
 }
+html body header {
+  position: sticky;
+  background: #150E28;
+  z-index: 30;
+  top: 0;
+}
 html body header .hamburger-menu .hamburger {
   position: absolute;
   cursor: pointer;
@@ -52,6 +58,9 @@ html body header .hamburger-menu .hamburger.open::before {
 html body header .hamburger-menu .hamburger.open::after {
   width: 28px;
   transform: rotate(-45deg) translate(7px, -11px);
+}
+html body header .hamburger-menu .hamburger.open-fixed {
+  position: fixed;
 }
 html body header .mobile-nav {
   transition: all 0.5s ease-in-out;
