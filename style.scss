@@ -29,11 +29,11 @@ html {
         background: $bg-color;
         background-repeat: no-repeat;
 
-        .grad-btn{
+        .grad-btn {
 
-            &:hover{
+            &:hover {
                 @include transition-ease;
-                background-image:linear-gradient( to right, #ab3082, rgb(172, 3, 172), #683ba2);
+                background-image: linear-gradient(to right, #ab3082, rgb(172, 3, 172), #683ba2);
             }
         }
 
@@ -44,6 +44,13 @@ html {
             z-index: 50;
 
             .hamburger-menu {
+                width: 45px;
+                height: 45px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                padding-right: 2px;
 
                 .hamburger {
                     position: absolute;
@@ -79,20 +86,31 @@ html {
 
                         &::before {
                             width: 28px;
-                            transform: rotate(45deg) translate(9px, 1px);
+                            transform: rotate(45deg) translate(10px, 5px);
                         }
 
                         &::after {
                             width: 28px;
-                            transform: rotate(-44deg) translate(6px, -12px);
+                            transform: rotate(-44deg) translate(2px, -10px);
                         }
 
                     }
 
                 }
+
                 &.open-fixed {
                     position: fixed;
                 }
+            }
+
+            .hamburger-menu-border {
+                border: 2px solid;
+                // border-image: linear-gradient(to bottom, #903AFF, #FE34B9);
+                background-clip: text;
+                border-radius: 50%;
+                -webkit-text-fill-color: transparent;
+                border-image-slice: 1;
+
             }
 
             .mobile-nav {
@@ -129,6 +147,7 @@ html {
                     }
                 }
             }
+
             // .intro{
             //     overflow: hidden;
 

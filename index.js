@@ -10,8 +10,9 @@ const guidelinesRight = document.getElementById(".guidelines-right");
 
 let showMenu = false;
 function showHamb() {
-  if (!showMenu) {
-    hambBtn.classList.add("open");
+    if (!showMenu) {
+      hambElem.classList.add("hamburger-menu-border");
+      hambBtn.classList.add("open");
     hambBtn.classList.add("open-fixed");
     mobileNav.classList.add("open");
     mobileNavLinks.forEach((item) => {
@@ -20,6 +21,7 @@ function showHamb() {
 
     showMenu = true;
   } else {
+    hambElem.classList.remove("hamburger-menu-border");
     hambBtn.classList.remove("open");
     hambBtn.classList.remove("open-fixed");
     mobileNav.classList.remove("open");
