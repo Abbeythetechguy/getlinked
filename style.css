@@ -16,10 +16,8 @@ html body {
   background-repeat: no-repeat;
 }
 html body header {
-  position: sticky;
   background: #150E28;
-  z-index: 30;
-  top: 0;
+  z-index: 50;
 }
 html body header .hamburger-menu .hamburger {
   position: absolute;
@@ -53,11 +51,11 @@ html body header .hamburger-menu .hamburger.open {
 }
 html body header .hamburger-menu .hamburger.open::before {
   width: 28px;
-  transform: rotate(45deg) translate(9px, 0px);
+  transform: rotate(45deg) translate(9px, 1px);
 }
 html body header .hamburger-menu .hamburger.open::after {
   width: 28px;
-  transform: rotate(-45deg) translate(7px, -11px);
+  transform: rotate(-44deg) translate(6px, -12px);
 }
 html body header .hamburger-menu .hamburger.open-fixed {
   position: fixed;
@@ -71,6 +69,14 @@ html body header .mobile-nav.open {
   visibility: visible;
   transition: all 0.5s ease-in-out;
   transform: translateY(0);
+}
+html body header .mobile-nav .mobile-nav-links {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-100%);
+}
+html body header .mobile-nav .mobile-nav-links.open {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
 }
 html body main .hero-section .hero-left .timer {
   font-family: "Unica One";

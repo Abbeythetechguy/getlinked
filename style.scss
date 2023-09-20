@@ -31,10 +31,8 @@ html {
         background-repeat: no-repeat;
 
         header {
-            position: sticky;
             background: $bg-color;
-            z-index: 30;
-            top: 0;
+            z-index: 50;
 
             .hamburger-menu {
 
@@ -72,31 +70,41 @@ html {
 
                         &::before {
                             width: 28px;
-                            transform: rotate(45deg) translate(9px, 0px);
+                            transform: rotate(45deg) translate(9px, 1px);
                         }
 
                         &::after {
                             width: 28px;
-                            transform: rotate(-45deg) translate(7px, -11px);
+                            transform: rotate(-44deg) translate(6px, -12px);
                         }
 
                     }
 
-                    &.open-fixed{
+                    &.open-fixed {
                         position: fixed;
                     }
-                }                              
+                }
             }
 
-            .mobile-nav{
+            .mobile-nav {
                 @include transition-ease;
                 visibility: hidden;
                 transform: translateY(-100%);
 
-                &.open{
+                &.open {
                     visibility: visible;
                     @include transition-ease;
                     transform: translateY(0);
+                }
+
+                .mobile-nav-links {
+                    @include transition-ease;
+                    transform: translateX(-100%);
+
+                    &.open {
+                        @include transition-ease;
+                        transform: translateX(0);
+                    }
                 }
             }
         }
@@ -107,11 +115,55 @@ html {
 
                 .hero-left {
 
-                    .timer{
+                    .timer {
                         font-family: 'Unica One';
                     }
                 }
             }
+            // .intro{
+            //     overflow: hidden;
+
+            //     .intro-left{
+            //         @include transition-ease;
+            //         transform: translateX(-110%);
+
+            //         &.open{
+            //             @include transition-ease;
+            //             transform: translateX(0);
+            //         }
+            //     }
+            //     .intro-right{
+            //         @include transition-ease;
+            //         transform: translateX(120%);
+
+            //         &.open{
+            //             @include transition-ease;
+            //             transform: translateX(0);
+            //         }
+            //     }
+            // }
+            // .guidelines{
+            //     overflow: hidden;
+
+            //     .guidelines-left{
+            //         @include transition-ease;
+            //         transform: translateX(-120%);
+
+            //         &.open{
+            //             @include transition-ease;
+            //             transform: translateX(0);
+            //         }
+            //     }
+            //     .guidelines-right{
+            //         @include transition-ease;
+            //         transform: translateX(120%);
+
+            //         &.open{
+            //             @include transition-ease;
+            //             transform: translateX(0);
+            //         }
+            //     }
+            // }
         }
     }
 }
