@@ -23,12 +23,19 @@ html {
 
     body {
         max-width: 1440px;
-        height: 1000px;
         margin: 0 auto;
         color: white;
         font-family: $font-family ;
         background: $bg-color;
         background-repeat: no-repeat;
+
+        .grad-btn{
+
+            &:hover{
+                @include transition-ease;
+                background-image:linear-gradient( to right, #ab3082, rgb(172, 3, 172), #683ba2);
+            }
+        }
 
         header {
             position: sticky;
