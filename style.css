@@ -62,7 +62,7 @@ html body header .hamburger-menu .hamburger.open::after {
   width: 28px;
   transform: rotate(-44deg) translate(6px, -12px);
 }
-html body header .hamburger-menu .hamburger.open-fixed {
+html body header .hamburger-menu.open-fixed {
   position: fixed;
 }
 html body header .mobile-nav {
