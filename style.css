@@ -16,6 +16,8 @@ html body {
   background-repeat: no-repeat;
 }
 html body header {
+  position: sticky;
+  top: 0;
   background: #150E28;
   z-index: 50;
 }
