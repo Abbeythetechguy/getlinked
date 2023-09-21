@@ -91,7 +91,8 @@
             </div>
 
         </section>
-        <section id="intro" onmouseenter="mouseOverEffect()" class="xl:flex gap-5 lg:flex block xl:px-24 lg:px-20 md:px-16 px-4 py-14 border-gray-700 border-b">
+        <section id="intro" onmouseenter="mouseOverEffect()"
+            class="xl:flex gap-5 lg:flex block xl:px-24 lg:px-20 md:px-16 px-4 py-14 border-gray-700 border-b">
             <div id="intro-left" class=" xl:w-1/2 lg:w-1/2 flex justify-center xl:block lg:block relative">
                 <img src="./images/star pu.svg" alt="" class="absolute w-[3%] left-0 top-20">
                 <img src="./images/the big idea 1.svg" alt="">
@@ -114,7 +115,8 @@
                     that's what we're all about!</p>
             </div>
         </section>
-        <section id="guidelines" onmouseenter="mouseOverEffet()" class=" flex gap-5 xl:flex-row lg:flex-row flex-col-reverse xl:px-24 lg:px-20 md:px-16 px-4 pb-14 border-gray-700 border-b">
+        <section id="guidelines" onmouseenter="mouseOverEffet()"
+            class=" flex gap-5 xl:flex-row lg:flex-row flex-col-reverse xl:px-24 lg:px-20 md:px-16 px-4 pb-14 border-gray-700 border-b">
             <div id="guidelines-left" class=" xl:w-1/2 lg:w-1/2 w-full flex flex-col justify-center">
                 <h1 class="text-xl xl:text-2xl font-black pb-[10px] text-center xl:text-left lg:text-left  relative">
                     Rules and<br> <span class="text-[#D434FE]">Guidelines</span>
@@ -139,7 +141,8 @@
                 <img src="./images/woman-reading.svg" alt="">
             </div>
         </section>
-        <section id="judging-criteria" class=" xl:flex lg:flex block gap-10  xl:px-24 lg:px-20 md:px-16 px-4 py-14 border-gray-700 border-b">
+        <section id="judging-criteria"
+            class=" xl:flex lg:flex block gap-10  xl:px-24 lg:px-20 md:px-16 px-4 py-14 border-gray-700 border-b">
             <div class=" xl:w-1/2 lg:w-1/2 flex justify-center xl:block lg:block relative">
                 <img src="./images/star pu.svg" alt=""
                     class="absolute w-[3%] top-[-35px] xl:left-0 lg:left-0 xl:top-0 lg:top-0">
@@ -199,35 +202,61 @@
                 </section>
             </div>
         </section>
-        <section id="frequently-ask-quest" class=" flex xl:flex-row lg:flex-row flex-col xl:px-24 lg:px-20 md:px-16 px-4 py-8 border-gray-700 border-b">
+        <section id="frequently-ask-quest"
+            class=" flex xl:flex-row lg:flex-row flex-col xl:px-24 lg:px-20 md:px-16 px-4 py-8 border-gray-700 border-b">
             <div class=" xl:w-[40%] lg:w-[40%] w-full flex flex-col justify-center">
                 <h1 class="text-xl xl:text-2xl font-black pb-[10px] text-center xl:text-left lg:text-left  relative">
                     Frequently Asked<br> <span class="text-[#D434FE]">Question</span>
                     <img src="./images/star pu.svg" alt="" class="absolute w-[4%] left-[-50px] top-0 ">
                 </h1>
                 <p>We got answers to the questions that you might want to ask about getlinked Hackathon 1.0</p>
-                <ul>
-                    <li class="border-b border-[#D434FE] py-4 flex justify-between items-center ">
-                        <p>Can I work on a project I started before the hackathon?</p> <b
-                            class="text-[#D434FE] text-2xl">+</b>
+                <ul class="FAQs-dropdown">
+                    <li class=" border-b border-[#D434FE]" onclick="showFAQDropdown()" id="frequently-ask-dropdown">
+                        <span class=" py-4 flex justify-between items-center ">
+                            <p>Can I work on a project I started before the hackathon?</p> <b
+                                class="text-[#D434FE] text-2xl">+</b>
+                        </span>
+                        <p id="frequently-ask-dropdown-item1">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Neque ut voluptate vitae ab maiores dicta!</p>
                     </li>
-                    <li class="border-b border-[#D434FE] py-4 flex justify-between items-center ">
-                        <p>What happens if I need help during the hackathon?</p> <b
-                            class="text-[#D434FE] text-2xl">+</b>
+                    <li class=" border-b border-[#D434FE]" onclick="showFAQDropdown2()" id="frequently-ask-dropdown2">
+                        <span class="py-4 flex justify-between items-center ">
+                            <p>What happens if I need help during the hackathon?</p> <b
+                                class="text-[#D434FE] text-2xl">+</b>
+                        </span>
+                        <p id="frequently-ask-dropdown-item2">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Neque ut voluptate vitae ab maiores dicta!</p>
                     </li>
-                    <li class="border-b border-[#D434FE] py-4 flex justify-between items-center ">
-                        <p>What happens if I don't have an idea for a project?</p> <b
-                            class="text-[#D434FE] text-2xl">+</b>
+                    <li class=" border-b border-[#D434FE]" onclick="showFAQDropdown3()" id="frequently-ask-dropdown3">
+                        <span class=" py-4 flex justify-between items-center ">
+                            <p>What happens if I don't have an idea for a project?</p> <b
+                                class="text-[#D434FE] text-2xl">+</b>
+                        </span>
+                        <p id="frequently-ask-dropdown-item3">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Neque ut voluptate vitae ab maiores dicta!</p>
                     </li>
-                    <li class="border-b border-[#D434FE] py-4 flex justify-between items-center ">
-                        <p>Can I join a team or do I have to come with one?</p> <b class="text-[#D434FE] text-2xl">+</b>
+                    <li class=" border-b border-[#D434FE]" onclick="showFAQDropdown4()" id="frequently-ask-dropdown4">
+                        <span class=" py-4 flex justify-between items-center ">
+                            <p>Can I join a team or do I have to come with one?</p> <b
+                                class="text-[#D434FE] text-2xl">+</b>
+                        </span>
+                        <p id="frequently-ask-dropdown-item4">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Neque ut voluptate vitae ab maiores dicta!</p>
                     </li>
-                    <li class="border-b border-[#D434FE] py-4 flex justify-between items-center ">
-                        <p>What happens after the hackathon ends</p> <b class="text-[#D434FE] text-2xl">+</b>
+                    <li class=" border-b border-[#D434FE]" onclick="showFAQDropdown5()" id="frequently-ask-dropdown5">
+                        <span class=" py-4 flex justify-between items-center ">
+                            <p>What happens after the hackathon ends</p> <b class="text-[#D434FE] text-2xl">+</b>
+                        </span>
+                        <p id="frequently-ask-dropdown-item5">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Neque ut voluptate vitae ab maiores dicta!</p>
                     </li>
-                    <li class="border-b border-[#D434FE] py-4 flex justify-between items-center ">
-                        <p>Can I work on a project I started before the hackathon?</p> <b
-                            class="text-[#D434FE] text-2xl">+</b>
+                    <li class=" border-b border-[#D434FE]" onclick="showFAQDropdown6()" id="frequently-ask-dropdown6">
+                        <span class=" py-4 flex justify-between items-center ">
+                            <p>Can I work on a project I started before the hackathon?</p> <b
+                                class="text-[#D434FE] text-2xl">+</b>
+                        </span>
+                        <p id="frequently-ask-dropdown-item6">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                            Neque ut voluptate vitae ab maiores dicta!</p>
                     </li>
                 </ul>
             </div>
@@ -432,17 +461,21 @@
             </div>
 
         </section>
-        <section id="privacy" class=" xl:flex lg:flex justify-center block gap-10 xl:px-24 lg:px-20 md:px-16 px-4 pt-14 pb-32 ">
+        <section id="privacy"
+            class=" xl:flex lg:flex justify-center block gap-10 xl:px-24 lg:px-20 md:px-16 px-4 pt-14 pb-32 ">
             <div class="lg:w-[50%] w-full flex flex-col justify-center relative lg:pt-8 xl:pt-14">
                 <h1 class="text-xl xl:text-2xl font-black pb-[10px] text-center lg:text-left  relative">
                     Privacy Policy and <br> <span class="text-[#D434FE]">Terms</span>
                 </h1>
                 <p class="my-6  xl:my-6 lg:my-2">Last updated on September 12, 2023</p>
-                <p class=" text-center lg:text-left ">Below are our privacy & policy, which outline a lot of goodies. It’s our aim to always take of our
+                <p class=" text-center lg:text-left ">Below are our privacy & policy, which outline a lot of goodies.
+                    It’s our aim to always take of our
                     participant</p>
                 <!-- <img src="./images/star.png" alt="" class="absolute w-[4%] right-0 bottom-5 xl:left-[-100px] lg:left-[-100px]  "> -->
-                <section class="border-2 rounded-xl border-[#D434FE] bg-[#251a4860]  md:px-20 lg:px-4  px-2 py-10 mt-8 ">
-                    <p class="text-center lg:text-left leading-7 xl:leading-9 ">At getlinked tech Hackathon 1.0, we value your privacy
+                <section
+                    class="border-2 rounded-xl border-[#D434FE] bg-[#251a4860]  md:px-20 lg:px-4  px-2 py-10 mt-8 ">
+                    <p class="text-center lg:text-left leading-7 xl:leading-9 ">At getlinked tech Hackathon 1.0, we
+                        value your privacy
                         and are committed to protecting your personal information.
                         This Privacy Policy outlines how we collect, use, disclose,
                         and safeguard your data when you participate in our tech
@@ -466,45 +499,64 @@
                         More</a>
                 </section>
 
-                <img src="./images/star pu.svg" alt="" class="absolute w-[3%] left-[-4%] md:left-[-10%] bottom-[200px] ">
+                <img src="./images/star pu.svg" alt=""
+                    class="absolute w-[3%] left-[-4%] md:left-[-10%] bottom-[200px] ">
                 <img src="./images/star pu.svg" alt="" class="absolute w-[3%] right-2 top-[200px] lg:top-10 ">
             </div>
-            <div class="lg:w-[50%] w-full mx-auto sm:w-[80%] mt-20 lg:mt-0 bg-[url('./images/security.svg')] relative bg-contain bg-no-repeat">
+            <div
+                class="lg:w-[50%] w-full mx-auto sm:w-[80%] mt-20 lg:mt-0 bg-[url('./images/security.svg')] relative bg-contain bg-no-repeat">
                 <img src="./images/privacy.svg" alt="" class="relative top-[120px] lg:top-[170px] xl:top-[230px]">
                 <img src="./images/star-ash.svg" alt="" class="absolute right-0 bottom-0 lg:bottom-[30%] w-[4%]">
                 <img src="./images/star.png" alt="" class="absolute right-[20%] top-[14%] w-[4%]">
                 <img src="./images/star.png" alt="" class="absolute w-[3%] left-20">
-                <img src="./images/star pu.svg" alt="" class="absolute w-[3%] left-2 top-8 lg:left-36 lg:top-[60%] xl:top-[70%]">
+                <img src="./images/star pu.svg" alt=""
+                    class="absolute w-[3%] left-2 top-8 lg:left-36 lg:top-[60%] xl:top-[70%]">
             </div>
         </section>
     </main>
-    <footer class="xl:px-24 lg:px-20 px-4 py-14 relative bg-[#100b1f]">
+    <footer class="xl:px-24 lg:px-20 md:px-16 px-4 py-14 relative bg-[#100b1f]">
         <section class="lg:flex justify-center block gap-10 pb-20 lg:pb-12">
             <div class="lg:w-[50%]">
-                <div class="logo xl:text-3xl lg:text-2xl text-xl font-black">get<span class="text-[#D434FE]">linked</span></div>
-                <p class="mt-6 mb-10 lg:mb-20 lg:text-[14px] xl:text-xl lg:pr-12">Getlinked Tech Hackathon is a technology innovation program 
-                    established by a group of organizations with the aim of showcasing 
+                <div class="logo xl:text-3xl lg:text-2xl text-xl font-black">get<span
+                        class="text-[#D434FE]">linked</span></div>
+                <p class="mt-6 mb-10 lg:mb-20 lg:text-[14px] xl:text-xl lg:pr-12">Getlinked Tech Hackathon is a
+                    technology innovation program
+                    established by a group of organizations with the aim of showcasing
                     young and talented individuals in the field of technology</p>
-                <div class="mb-10"><span class="border-r-4 border-[#D434FE] pr-4">Term of Use</span> <span class="px-4">Privacy Policy</span></div>
+                <div class="mb-10"><span class="border-r-4 border-[#D434FE] pr-4">Term of Use</span> <span
+                        class="px-4">Privacy Policy</span></div>
             </div>
             <ul class="lg:w-[28%]  lg:text-[14px] xl:text-xl relative">
                 <h1 class="font-bold text-[#D434FE]">Useful Links</h1>
                 <li class="my-2"><a href="">Overview</a></li>
                 <li class="my-2"><a href="">Timeline</a></li>
-                <li class="my-2"><a href="">FAQs</a></li>        
+                <li class="my-2"><a href="">FAQs</a></li>
                 <img src="./images/star.png" alt="" class="absolute right-20 top-[30%] w-[3%] lg:w-[5%]">
                 <li class="my-2"><a href="">Register</a></li>
-                <li class="flex gap-4 items-center mt-2 mb-10"><b class="text-[#D434FE]">Follow Us</b><a href="https://www.instagram.com/n_a_9_0s/"><i class="fa-brands fa-instagram text-[25px]"></i></a><a href="https://twitter.com/Psycho_Techo?t=0ifDBD5G95xJXz0cd1lVrw&s=09"><i class="fa-brands fa-x-twitter  text-[25px]"></i></a><a href="https://web.facebook.com/profile.php?id=100069361582199"><i class="fa-brands fa-facebook-f  text-[25px]"></i></a><a href="https://www.linkedin.com/in/abbey-ezeilo-15474627b"><i class="fa-brands fa-linkedin-in text-[25px]"></i></a></li>
+                <li class="flex gap-4 items-center mt-2 mb-10"><b class="text-[#D434FE]">Follow Us</b><a
+                        href="https://www.instagram.com/n_a_9_0s/" target="_blank"><i
+                            class="fa-brands fa-instagram text-[25px]"></i></a><a
+                        href="https://twitter.com/Psycho_Techo?t=0ifDBD5G95xJXz0cd1lVrw&s=09" target="_blank"><i
+                            class="fa-brands fa-x-twitter  text-[25px]"></i></a><a
+                        href="https://web.facebook.com/profile.php?id=100069361582199" target="_blank"><i
+                            class="fa-brands fa-facebook-f  text-[25px]"></i></a><a
+                        href="https://www.linkedin.com/in/abbey-ezeilo-15474627b" target="_blank"><i
+                            class="fa-brands fa-linkedin-in text-[25px]"></i></a></li>
             </ul>
             <ul class="lg:w-[22%]  lg:text-[14px] xl:text-xl">
                 <h1 class="font-bold text-[#D434FE]">Contact Us</h1>
-                <li><a href=""  class="flex gap-4 my-2"><i class="fa-solid fa-phone-volume text-xl"></i> <p>+234 8088 423 637</p></a></li>
-                <li><a href="" class="flex gap-4 my-4"><i class="fa-solid fa-location-dot text-xl"></i> <p>35 New Heaven Estate,<br> Rivers State</p></a></li>
+                <li><a href="" class="flex gap-4 my-2"><i class="fa-solid fa-phone-volume text-xl"></i>
+                        <p>+234 8088 423 637</p>
+                    </a></li>
+                <li><a href="" class="flex gap-4 my-4"><i class="fa-solid fa-location-dot text-xl"></i>
+                        <p>35 New Heaven Estate,<br> Rivers State</p>
+                    </a></li>
             </ul>
         </section>
         <img src="./images/star.png" alt="" class="absolute left-0 xl:left-4 top-20  w-[3%] lg:w-[2%]">
         <img src="./images/star.png" alt="" class="absolute right-10 bottom-[25%] w-[3%] lg:w-[2%]">
-        <img src="./images/star pu.svg" alt="" class="absolute left-[50%] bottom-[13%] lg:bottom-[20%] w-[3%] lg:w-[2%]">
+        <img src="./images/star pu.svg" alt=""
+            class="absolute left-[50%] bottom-[13%] lg:bottom-[20%] w-[3%] lg:w-[2%]">
         <p class="text-center">All rights reserved. © getlinked Ltd.</p>
     </footer>
 

@@ -93,4 +93,40 @@ html body header .mobile-nav .mobile-nav-links.open {
 }
 html body main .hero-section .hero-left .timer {
   font-family: "Unica One";
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item1 {
+  display: none;
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item1.open {
+  display: block;
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item2 {
+  display: none;
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item2.open {
+  display: block;
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item3 {
+  display: none;
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item3.open {
+  display: block;
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item4 {
+  display: none;
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item4.open {
+  display: block;
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item5 {
+  display: none;
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item5.open {
+  display: block;
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item6 {
+  display: none;
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item6.open {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

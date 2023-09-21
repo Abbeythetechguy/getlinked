@@ -18,6 +18,7 @@ $font-family: Montserrat, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
 @mixin transition-ease {
     transition: all 0.5s ease-in-out;
 }
+
 html {
 
     body {
@@ -184,6 +185,54 @@ html {
             //         }
             //     }
             // }
+
+            .FAQs-dropdown {
+
+
+                #frequently-ask-dropdown-item1 {
+                    display: none;
+
+                    &.open {
+                        display: block;
+                    }
+                }
+                
+                #frequently-ask-dropdown-item2 {
+                    display: none;
+
+                    &.open {
+                        display: block;
+                    }
+                }
+                #frequently-ask-dropdown-item3 {
+                    display: none;
+
+                    &.open {
+                        display: block;
+                    }
+                }
+                #frequently-ask-dropdown-item4 {
+                    display: none;
+
+                    &.open {
+                        display: block;
+                    }
+                }
+                #frequently-ask-dropdown-item5 {
+                    display: none;
+
+                    &.open {
+                        display: block;
+                    }
+                }
+                #frequently-ask-dropdown-item6 {
+                    display: none;
+
+                    &.open {
+                        display: block;
+                    }
+                }
+            }
         }
     }
 }
