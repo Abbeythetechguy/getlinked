@@ -9,7 +9,6 @@
 }
 
 html body {
-  overflow-x: hidden;
   max-width: 1440px;
   margin: 0 auto;
   color: white;
@@ -26,10 +25,6 @@ html body header {
   top: 0;
   background: #150E28;
   z-index: 50;
-}
-html body header .hamburger-menu {
-  display: grid;
-  place-items: center;
 }
 html body header .hamburger-menu .hamburger {
   position: absolute;

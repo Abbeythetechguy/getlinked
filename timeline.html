@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Linked</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header
+        class="flex justify-between items-center h-[80px] border-gray-500 border-b xl:px-24 lg:px-20 md:px-16 px-4 ">
+        <div class="logo xl:text-3xl lg:text-2xl text-xl font-black">
+            get<span class="text-[#D434FE]">linked</span>
+        </div>
+        <nav class="xl:gap-10 lg:gap-6 items-center hidden xl:flex lg:flex ">
+            <a href="./timeline.html" class="nav-links">Timeline</a>
+            <a href="" class="nav-links">Overview</a>
+            <a href="" class="nav-links">FAQs</a>
+            <a href="./contactpage.html" class="nav-links">Contact</a>
+            <a href="./register.html"
+                class="grad-btn nav-links bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] w-[172px] h-[53px] rounded flex justify-center items-center">Register</a>
+        </nav>
+        <div class="hamburger-menu flex w-[45px] h-[45px] cursor-pointer justify-center items-center rounded-full pr-1 relative xl:hidden lg:hidden z-20"
+            onclick="showHamb()"><span class="hamburger block bg-white w-[38px] h-[5px] rounded-xl"></span>
+        </div>
+
+        <!-- This is the mobile menu nav-->
+        <nav class="mobile-nav fixed w-full h-full z-10 top-0 left-0 flex flex-col justify-center px-8 bg-[#150E28]">
+            <a href="./timeline.html" class="mobile-nav-links block my-4">Timeline</a>
+            <a href="" class="mobile-nav-links block my-4">Overview</a>
+            <a href="" class="mobile-nav-links block my-4">FAQs</a>
+            <a href="./contactpage.html" class="mobile-nav-links block my-4">Contact</a>
+            <a href="./register.html"
+                class="mobile-nav-links bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] w-[172px] h-[53px] rounded flex justify-center items-center">Register</a>
+        </nav>
+    </header>
+    <section id="timeline" class="xl:px-24 lg:px-20 md:px-16 px-4 py-14 relative">
+        <h1 class="text-xl lg:text-2xl font-black pb-[10px] text-center">Timeline</h1>
+        <p class="text-center mb-12">Here is the breakdown of the time we anticipate using for the upcoming event.
+        </p>
+        <img src="./images/star pu.svg" alt=""
+            class="absolute w-[5%] lg:w-[2%] top-[180px] left-10 lg:left-[250px] lg:top-[150px]">
+        <img src="./images/star.png" alt=""
+            class="absolute w-[5%] lg:w-[2%] top-[50%] right-16 lg:right-[250px] lg:top-[43%]">
+        <img src="./images/star-ash.svg" alt=""
+            class="absolute w-[5%] lg:w-[2%] left-2 bottom-10 lg:left-[180px] lg:bottom-32">
+        <div class="timetable">
+            <section class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
+                <div class="col-start-2  xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right">
+                    <h3 class="text-[#D434FE] font-bold">Hackathon Announcement</h3>
+                    <p class="">The getlinked tech hackathon 1.0 is formally announced to the general public and
+                        teams begin to get ready to register</p>
+                </div>
+                <span
+                    class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2  xl:w-[10%] lg:w-[10%]">
+                    <span class="h-[120px] w-[2.5px] lg:w-[5px] bg-[#D434FE] block "></span>
+                    <span
+                        class="h-[24px] w-[24px] lg:h-[53px] lg:w-[53px] bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] flex justify-center items-center rounded-full">1</span>
+                </span>
+                <h3 class="text-[#D434FE]  font-bold col-start-2 xl:w-[45%] lg:w-[45%]">November 18, 2023</h3>
+            </section>
+            <section class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
+                <h3 class="text-[#D434FE] font-bold col-start-2  xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right">
+                    November 18, 2023</h3>
+                <span
+                    class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2 xl:w-[10%] lg:w-[10%]">
+                    <span class="h-[120px] w-[2.5px] lg:w-[5px] bg-[#D434FE] block "></span>
+                    <span
+                        class="h-[24px] w-[24px] lg:h-[53px] lg:w-[53px]  bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] flex justify-center items-center rounded-full">2</span>
+                </span>
+                <div class="col-start-2 row-start-1  xl:w-[45%] lg:w-[45%]">
+                    <h3 class="text-[#D434FE] font-bold">Teams Registration begins</h3>
+                    <p class="">Interested teams can now show their interest in the getlinked tech hackathon 1.0
+                        2023 by proceeding to register</p>
+                </div>
+            </section>
+            <section class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
+                <div class="col-start-2 xl:w-[45%] lg:w-[45%] w-[90%] xl:text-right lg:text-right">
+                    <h3 class="text-[#D434FE] font-bold">Teams Registration ends</h3>
+                    <p class="">Interested Participants are no longer Allowed to register </p>
+                </div>
+                <span
+                    class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2 xl:w-[10%] lg:w-[10%]">
+                    <span class="h-[77px] w-[2.5px] lg:w-[5px] bg-[#D434FE] block "></span>
+                    <span
+                        class="h-[24px] w-[24px] lg:h-[53px] lg:w-[53px]  bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] flex justify-center items-center rounded-full">3</span>
+                </span>
+                <h3 class="text-[#D434FE] font-bold col-start-2 xl:w-[45%] lg:w-[45%]">November 18, 2023</h3>
+            </section>
+            <section class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
+                <h3 class="text-[#D434FE] font-bold col-start-2 xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right ">
+                    November 18, 2023</h3>
+                <span
+                    class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2 xl:w-[10%] lg:w-[10%]">
+                    <span class="h-[130px] w-[2.5px] lg:w-[5px] bg-[#D434FE] block "></span>
+                    <span
+                        class="h-[24px] w-[24px] lg:h-[53px] lg:w-[53px]  bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] flex justify-center items-center rounded-full">4</span>
+                </span>
+                <div class="col-start-2 row-start-1  xl:w-[45%] lg:w-[45%]">
+                    <h3 class="text-[#D434FE] font-bold">Announcement of the accepted teams and ideas</h3>
+                    <p class="">All teams whom idea has been accepted into getlinked tech hackathon 1.0 2023 are
+                        formally announced</p>
+                </div>
+            </section>
+            <section class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
+                <div class="col-start-2 xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right">
+                    <h3 class="text-[#D434FE] font-bold">Getlinked Hackathon 1.0 Offically Begins</h3>
+                    <p class="">Accepted teams can now proceed to build their ground breaking skill driven solutions
+                    </p>
+                </div>
+                <span
+                    class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2 xl:w-[10%] lg:w-[10%]">
+                    <span class="h-[120px] w-[2.5px] lg:w-[5px] bg-[#D434FE] block "></span>
+                    <span
+                        class="h-[24px] w-[24px] lg:h-[53px] lg:w-[53px]  bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] flex justify-center items-center rounded-full">5</span>
+                </span>
+                <h3 class="text-[#D434FE] font-bold col-start-2 xl:w-[45%] lg:w-[45%] ">November 18, 2023</h3>
+            </section>
+            <section class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
+                <h3 class="text-[#D434FE] font-bold col-start-2  xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right">
+                    November 18, 2023</h3>
+                <span
+                    class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2 xl:w-[10%] lg:w-[10%]">
+                    <span class="h-[130px] w-[2.5px] lg:w-[5px] bg-[#D434FE] block "></span>
+                    <span
+                        class="h-[24px] w-[24px] lg:h-[53px] lg:w-[53px]  bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] flex justify-center items-center rounded-full">6</span>
+                </span>
+                <div class="col-start-2 row-start-1 xl:w-[45%] lg:w-[45%]">
+                    <h3 class="text-[#D434FE] font-bold">Demo Day</h3>
+                    <p class="">Teams get the opportunity to pitch their projects to judges. The winner of the
+                        hackathon will also be announced on this day</p>
+                </div>
+            </section>
+        </div>
+    </section>
+    <footer class="xl:px-24 lg:px-20 md:px-16 px-4 py-14 relative bg-[#100b1f]">
+        <section class="lg:flex justify-center block gap-10 pb-20 lg:pb-12">
+            <div class="lg:w-[50%]">
+                <div class="logo xl:text-3xl lg:text-2xl text-xl font-black">get<span
+                        class="text-[#D434FE]">linked</span></div>
+                <p class="mt-6 mb-10 lg:mb-20 lg:text-[14px] xl:text-xl lg:pr-12">Getlinked Tech Hackathon is a
+                    technology innovation program
+                    established by a group of organizations with the aim of showcasing
+                    young and talented individuals in the field of technology</p>
+                <div class="mb-10"><span class="border-r-4 border-[#D434FE] pr-4">Term of Use</span> <span
+                        class="px-4">Privacy Policy</span></div>
+            </div>
+            <ul class="lg:w-[28%]  lg:text-[14px] xl:text-xl relative">
+                <h1 class="font-bold text-[#D434FE]">Useful Links</h1>
+                <li class="my-2"><a href="">Overview</a></li>
+                <li class="my-2"><a href="./timeline.html">Timeline</a></li>
+                <li class="my-2"><a href="">FAQs</a></li>
+                <img src="./images/star.png" alt="" class="absolute right-20 top-[30%] w-[3%] lg:w-[5%]">
+                <li class="my-2"><a href="./register.html">Register</a></li>
+                <li class="flex gap-4 items-center mt-2 mb-10"><b class="text-[#D434FE]">Follow Us</b><a
+                        href="https://www.instagram.com/n_a_9_0s/" target="_blank"><i
+                            class="fa-brands fa-instagram text-[25px]"></i></a><a
+                        href="https://twitter.com/Psycho_Techo?t=0ifDBD5G95xJXz0cd1lVrw&s=09" target="_blank"><i
+                            class="fa-brands fa-x-twitter  text-[25px]"></i></a><a
+                        href="https://web.facebook.com/profile.php?id=100069361582199" target="_blank"><i
+                            class="fa-brands fa-facebook-f  text-[25px]"></i></a><a
+                        href="https://www.linkedin.com/in/abbey-ezeilo-15474627b" target="_blank"><i
+                            class="fa-brands fa-linkedin-in text-[25px]"></i></a></li>
+            </ul>
+            <ul class="lg:w-[22%]  lg:text-[14px] xl:text-xl">
+                <h1 class="font-bold text-[#D434FE]">Contact Us</h1>
+                <li><a href="" class="flex gap-4 my-2"><i class="fa-solid fa-phone-volume text-xl"></i>
+                        <p>+234 8088 423 637</p>
+                    </a></li>
+                <li class="flex gap-4 my-4"><i class="fa-solid fa-location-dot text-xl"></i>
+                        <p>35 New Heaven Estate,<br> Rivers State</p></li>
+            </ul>
+        </section>
+        <img src="./images/star.png" alt="" class="absolute left-0 xl:left-4 top-20  w-[3%] lg:w-[2%]">
+        <img src="./images/star.png" alt="" class="absolute right-10 bottom-[25%] w-[3%] lg:w-[2%]">
+        <img src="./images/star pu.svg" alt=""
+            class="absolute left-[50%] bottom-[13%] lg:bottom-[20%] w-[3%] lg:w-[2%]">
+        <p class="text-center">All rights reserved. © getlinked Ltd.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

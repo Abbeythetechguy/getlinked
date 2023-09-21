@@ -21,6 +21,7 @@ $font-family: Montserrat, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
 html {
 
     body {
+        overflow: hidden;
         max-width: 1440px;
         margin: 0 auto;
         color: white;

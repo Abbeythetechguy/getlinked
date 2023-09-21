@@ -24,7 +24,7 @@ $font-family: Montserrat, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
 html {
 
     body {
-        overflow-x: hidden;
+        // overflow-x: hidden;
         max-width: 1440px;
         margin: 0 auto;
         color: white;
@@ -48,8 +48,6 @@ html {
             z-index: 50;
 
             .hamburger-menu {
-                display: grid;
-                place-items: center;
 
                 .hamburger {
                     position: absolute;
