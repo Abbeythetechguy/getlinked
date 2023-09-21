@@ -12,6 +12,8 @@ $bg-color: #150E28;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Unica+One&family=Volkhov&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Unica+One&family=Voces&family=Volkhov&display=swap');
 
 $font-family: Montserrat, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
@@ -22,9 +24,11 @@ $font-family: Montserrat, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
 html {
 
     body {
+        overflow-x: hidden;
         max-width: 1440px;
         margin: 0 auto;
         color: white;
+        // color: #3f2e694b;
         font-family: $font-family ;
         background: $bg-color;
         background-repeat: no-repeat;
@@ -36,6 +40,7 @@ html {
                 background-image: linear-gradient(to right, #ab3082, rgb(172, 3, 172), #683ba2);
             }
         }
+
 
         header {
             position: sticky;
@@ -131,6 +136,21 @@ html {
 
         main {
 
+            .vuzual-logo {
+                font-family: voces;
+
+                span {
+
+                    b {
+                        color: red;
+                        font-family: 'Volkhov';
+                    }
+                    div{
+                        font-size: 30%;
+                    }
+                }
+            }
+
             .hero-section {
 
                 .hero-left {
@@ -196,7 +216,7 @@ html {
                         display: block;
                     }
                 }
-                
+
                 #frequently-ask-dropdown-item2 {
                     display: none;
 
@@ -204,6 +224,7 @@ html {
                         display: block;
                     }
                 }
+
                 #frequently-ask-dropdown-item3 {
                     display: none;
 
@@ -211,6 +232,7 @@ html {
                         display: block;
                     }
                 }
+
                 #frequently-ask-dropdown-item4 {
                     display: none;
 
@@ -218,6 +240,7 @@ html {
                         display: block;
                     }
                 }
+
                 #frequently-ask-dropdown-item5 {
                     display: none;
 
@@ -225,6 +248,7 @@ html {
                         display: block;
                     }
                 }
+
                 #frequently-ask-dropdown-item6 {
                     display: none;
 

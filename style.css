@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Unica+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Unica+One&family=Volkhov&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Unica+One&family=Voces&family=Volkhov&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,7 @@
 }
 
 html body {
+  overflow-x: hidden;
   max-width: 1440px;
   margin: 0 auto;
   color: white;
@@ -90,6 +93,16 @@ html body header .mobile-nav .mobile-nav-links {
 html body header .mobile-nav .mobile-nav-links.open {
   transition: all 0.5s ease-in-out;
   transform: translateX(0);
+}
+html body main .vuzual-logo {
+  font-family: voces;
+}
+html body main .vuzual-logo span b {
+  color: red;
+  font-family: "Volkhov";
+}
+html body main .vuzual-logo span div {
+  font-size: 30%;
 }
 html body main .hero-section .hero-left .timer {
   font-family: "Unica One";
