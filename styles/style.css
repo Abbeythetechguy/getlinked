@@ -27,6 +27,10 @@ html body header {
   background: #150E28;
   z-index: 50;
 }
+html body header .hamburger-menu {
+  display: grid;
+  place-items: center;
+}
 html body header .hamburger-menu .hamburger {
   position: absolute;
   cursor: pointer;
@@ -69,7 +73,7 @@ html body header .hamburger-menu.open-fixed {
   position: fixed;
 }
 html body header .hamburger-menu-border {
-  border: 2px solid;
+  border: 2px solid #903AFF;
   -webkit-background-clip: text;
           background-clip: text;
   border-radius: 50%;
