@@ -8,9 +8,9 @@ const reg_api_Url = `${baseUrl}/hackathon/registration`;
 const checkBoxElem = document.getElementById("acceptTerms");
 const appFormElem = document.getElementById("AppForm");
 const btnElem = document.getElementById("btnElem");
-const popupElem = document.getElementById("successful-popup");
+const popupElem = document.getElementById("successful-popup")
 popupElem.style.display = "none";
-// appFormElem.style.display = "none";
+appFormElem.style.display ="none";
 //SCRIPTS FOR FETCHING CATEGORIES DATA
 
 // Defining async function
@@ -22,7 +22,7 @@ async function getapi(url) {
   var data = await response.json();
   console.log(data);
   if (response) {
-    // hideloader();
+    hideloader();
   }
   showCategory(data);
 }
@@ -30,10 +30,11 @@ async function getapi(url) {
 getapi(categoriesUrl);
 
 // Function to hide the loader
-// function hideloader() {
-//   document.getElementById("loading").style.display = "none";
-//   appFormElem.style.display = "block";
-// }
+function hideloader() {
+  document.getElementById("loading").style.display = "none";
+  appFormElem.style.display = "block";
+
+}
 // Function to define innerHTML for HTML Select Element
 
 function showCategory(data) {
@@ -50,11 +51,11 @@ function showCategory(data) {
 // SCRIPTS FOR SUBMITTING APPLICATION FORM
 
 function checkValidity() {
-  console.log("clicked!");
+    console.log("clicked!");
   //validate checkbox
   if (checkBoxElem.checked) {
     checkBoxElem.value = true;
-    alert("Accepted!");
+    alert("Accepted!")
     btnElem.removeAttribute("disabled");
     btnElem.focus();
   } else {
@@ -76,23 +77,23 @@ appFormElem.addEventListener("submit", async (event) => {
   let projectInputElem = document.getElementById("projectInput");
   let catOptElem = document.getElementById("categories");
   let groupOptElem = document.getElementById("group");
-  let acceptTermsElem = document.getElementById("acceptTerms");
+  let acceptTermsElem = document.getElementById("acceptTerms")
 
   const data = new FormData(appFormElem);
-  //   data.set("date_created", new Date().toISOString());
-  //   data.set("last_updated", new Date().toISOString());
-  //   data.append('variable1', variable1);
+//   data.set("date_created", new Date().toISOString());
+//   data.set("last_updated", new Date().toISOString());
+//   data.append('variable1', variable1);
 
   //   "date_created": "2023-09-18T22:51:20.528019+01:00",
   //   "last_updated": "2023-09-18T22:51:20.528019+01:00",
 
-  //   console.log(Array.from(data));
+//   console.log(Array.from(data));
 
   try {
     const res = await fetch(reg_api_Url, {
       method: "POST",
       headers: {
-        Accept: "application/json",
+        "Accept": "application/json",
         "Content-Type": "application/json",
       },
       //   body: data,
@@ -110,7 +111,7 @@ appFormElem.addEventListener("submit", async (event) => {
     // "body": JSON.stringify(data)
 
     const resData = await res.json();
-    popupElem.style.display = "grid";
+    popupElem.style.display = "grid"
     console.log(resData);
   } catch (err) {
     console.log(err.message);
