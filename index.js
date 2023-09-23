@@ -2,15 +2,6 @@ const hambElem = document.querySelector(".hamburger-menu");
 const hambBtn = document.querySelector(".hamburger");
 const mobileNav = document.querySelector(".mobile-nav");
 const mobileNavLinks = document.querySelectorAll(".mobile-nav-links");
-// const intro = document.querySelector(".intro");
-const introLeft = document.getElementById("intro-left");
-const introRight = document.getElementById("intro-right");
-const guidelinesLeft = document.getElementById("guidelines-left");
-const guidelinesRight = document.getElementById("guidelines-right");
-const judgingCriteriaLeft = document.getElementById("judging-criteria-left")
-const judgingCriteriaRight = document.getElementById("judging-criteria-right")
-const frequentAskLeft = document.getElementById("frequently-ask-left")
-const frequentAskRight = document.getElementById("frequently-ask-right")
 
 
 let frequentlyAskedDropItem1 = document.getElementById(
@@ -58,44 +49,6 @@ function showHamb() {
 }
 
 // intro.addEventListener("onmouseover", mouseOverEffect())
-
-let slider = false;
-function mouseOverEffect() {
-  if (!slider) {
-    introLeft.classList.add("open");
-    introRight.classList.add("open");
-  } else {
-    introLeft.classList.remove("open");
-    introRight.classList.remove("open");
-  }
-}
-function mouseOverEffet() {
-  if (!slider) {
-    guidelinesLeft.classList.add("open");
-    guidelinesRight.classList.add("open");
-  } else {
-    guidelinesLeft.classList.remove("open");
-    guidelinesRight.classList.remove("open");
-  }
-}
-function judgingHoverOverEffet() {
-  if (!slider) {
-    judgingCriteriaRight.classList.add("open");
-    judgingCriteriaLeft.classList.add("open");
-  } else {
-    judgingCriteriaRight.classList.remove("open");
-    judgingCriteriaLeft.classList.remove("open");
-  }
-}
-function freqOverEffet() {
-  if (!slider) {
-    frequentAskLeft.classList.add("open");
-    frequentAskRight.classList.add("open");
-  } else {
-    frequentAskLeft.classList.remove("open");
-    frequentAskRight.classList.remove("open");
-  }
-}
 
 function showFAQDropdown() {
   console.log("clicked");

@@ -144,7 +144,8 @@ html {
                         color: red;
                         font-family: 'Volkhov';
                     }
-                    div{
+
+                    div {
                         font-size: 30%;
                     }
                 }
@@ -160,116 +161,7 @@ html {
                 }
             }
 
-            #intro{
-                overflow: hidden;
-
-                #intro-left{
-                    @include transition-ease;
-                    transform: translateX(-110%);
-
-                    &.open{
-                        @include transition-ease;
-                        transform: translateX(0);
-                    }
-                }
-                #intro-right{
-                    @include transition-ease;
-                    transform: translateX(120%);
-
-                    &.open{
-                        @include transition-ease;
-                        transform: translateX(0);
-                    }
-                }
-            }
-            #guidelines{
-                overflow: hidden;
-
-                #guidelines-left{
-                    @include transition-ease;
-                    transform: translateX(-120%);
-
-                    &.open{
-                        @include transition-ease;
-                        transform: translateX(0);
-                    }
-                }
-                #guidelines-right{
-                    @include transition-ease;
-                    transform: translateX(120%);
-
-                    &.open{
-                        @include transition-ease;
-                        transform: translateX(0);
-                    }
-                }
-            }
-            #judging-criteria{
-                overflow: hidden;
-
-                #judging-criteria-left{
-                    @include transition-ease;
-                    transform: translateX(-120%);
-
-                    &.open{
-                        @include transition-ease;
-                        transform: translateX(0);
-                    }
-                }
-                #judging-criteria-right{
-                    @include transition-ease;
-                    transform: translateX(120%);
-
-                    &.open{
-                        @include transition-ease;
-                        transform: translateX(0);
-                    }
-                }
-            }
-            #guidelines{
-                overflow: hidden;
-
-                #guidelines-left{
-                    @include transition-ease;
-                    transform: translateX(-120%);
-
-                    &.open{
-                        @include transition-ease;
-                        transform: translateX(0);
-                    }
-                }
-                #guidelines-right{
-                    @include transition-ease;
-                    transform: translateX(120%);
-
-                    &.open{
-                        @include transition-ease;
-                        transform: translateX(0);
-                    }
-                }
-            }
-            #frequently-ask-quest{
-
-                #frequently-ask-left{
-                    @include transition-ease;
-                    transform: translateX(-130%);
-
-                    &.open{
-                        @include transition-ease;
-                        transform: translateX(0);
-                    }
-                }
-                #frequently-ask-right{
-                    @include transition-ease;
-                    transform: translateX(120%);
-
-                    &.open{
-                        @include transition-ease;
-                        transform: translateX(0);
-                    }
-                }
-
-               .FAQs-dropdown {
+            .FAQs-dropdown {
 
 
                 #frequently-ask-dropdown-item1 {
@@ -319,9 +211,10 @@ html {
                         display: block;
                     }
                 }
-            } 
             }
-            
+
         }
     }
+
+
 }
