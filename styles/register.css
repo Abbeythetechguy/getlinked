@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  max-width: 1440px;
+  margin: 0 auto;
+  color: white;
+  font-family: Montserrat, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: #150E28;
+  background-repeat: no-repeat;
+}
+html body .grad-btn {
+  transition: all 0.5s ease-in-out;
+  border: 2px solid;
+  -o-border-image: linear-gradient(to bottom, #903AFF, #FE34B9);
+     border-image: linear-gradient(to bottom, #903AFF, #FE34B9);
+  border-image-slice: 1;
+}
+html body .grad-btn:hover {
+  transition: all 0.5s ease-in-out;
+  border: 0;
+  background-image: linear-gradient(to right, #ab3082, rgb(172, 3, 172), #683ba2);
+}
+html body header {
+  z-index: 20;
+  position: sticky;
+  top: 0;
+  background: #150E28;
+}
+html body main option {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+html body #successful-popup .success {
+  border: 2px solid;
+  -o-border-image: linear-gradient(to bottom, #903AFF, #FE34B9);
+     border-image: linear-gradient(to bottom, #903AFF, #FE34B9);
+  border-image-slice: 1;
+}/*# sourceMappingURL=register.css.map */

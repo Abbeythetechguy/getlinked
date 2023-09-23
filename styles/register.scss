@@ -1,0 +1,71 @@
+//reset css
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//variables
+$primary-color: linear-gradient(to right, #FE34B9, #903AFF);
+$bg-color: #150E28;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
+
+$font-family: Montserrat, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+html {
+
+    body {
+        max-width: 1440px;
+        margin: 0 auto;
+        color: white;
+        font-family: $font-family ;
+        background: $bg-color;
+        background-repeat: no-repeat;
+
+        .grad-btn {
+            @include transition-ease;
+            border: 2px solid;
+            border-image: linear-gradient(to bottom, #903AFF, #FE34B9);
+            border-image-slice: 1;
+
+            &:hover {
+                @include transition-ease;
+                border: 0;
+                background-image: linear-gradient(to right, #ab3082, rgb(172, 3, 172), #683ba2);
+            }
+        }
+
+
+        header {
+            z-index: 20;
+            position: sticky;
+            top: 0;
+            background: $bg-color;
+        }
+
+        main{
+
+            option{
+                font-size: 14px;
+                font-weight: bold;
+                color: black;
+            }
+        }
+
+        #successful-popup {
+
+            .success {
+                border: 2px solid;
+                border-image: linear-gradient(to bottom, #903AFF, #FE34B9);
+                border-image-slice: 1;
+            }
+        }
+
+    }
+}

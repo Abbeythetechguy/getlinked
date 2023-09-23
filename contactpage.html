@@ -23,12 +23,13 @@
             <a href="" class="nav-links">Overview</a>
             <a href="" class="nav-links">FAQs</a>
             <a href="" class="nav-links">Contact</a>
-            <a href=""
+            <a href="./register.html"
                 class="grad-btn nav-links bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] w-[172px] h-[53px] rounded flex justify-center items-center">Register</a>
         </nav>
 
     </header>
-    <main class="flex relative flex-col-reverse lg:flex-row gap-10 items-center lg:h-[87vh] xl:px-24 lg:px-20 md:px-16 px-4 py-4">
+    <main
+        class="flex relative flex-col-reverse lg:flex-row gap-10 items-center lg:h-[87vh] xl:px-24 lg:px-20 md:px-16 px-4 py-4">
         <section class="lg:w-[25%]">
             <div class="hidden lg:block">
                 <h1 class="text-[#D434FE] text-3xl font-bold">Get in touch</h1>
@@ -49,9 +50,11 @@
                             class="fa-brands fa-linkedin-in text-[25px]"></i></a></span>
             </div>
         </section>
-     
-        <img src="./images/Purple-Lens-Flare.svg" alt="" class="xl:w-[800px]  lg:w-[700px] absolute z-[-1] top-[-1%] lg:top-[-10%] lg:left-[-20%] xl:left-[-10%] left-[-25%]">
-        <img src="./images/Purple-Lens-Flare.svg" alt="" class="xl:w-[800px] lg:w-[600px] absolute z-[-1] hidden lg:block  bottom-[-10%] lg:bottom-[-20%] lg:right-[-25%] right-[-60%]">
+
+        <img src="./images/Purple-Lens-Flare.svg" alt=""
+            class="xl:w-[800px]  lg:w-[700px] absolute z-[-1] top-[-1%] lg:top-[-10%] lg:left-[-20%] xl:left-[-10%] left-[-25%]">
+        <img src="./images/Purple-Lens-Flare.svg" alt=""
+            class="xl:w-[800px] lg:w-[600px] absolute z-[-1] hidden lg:block  bottom-[-10%] lg:bottom-[-20%] lg:right-[-25%] right-[-60%]">
 
         <section class="lg:w-[55%] lg:bg-[#3f2e694b] rounded-xl xl:px-20 lg:px-14 lg:py-10">
 
@@ -63,19 +66,28 @@
 
             <h2 class="text-[#D434FE] text-xl font-bold mb-4 pr-[50px] xl:pr-[200px] lg:pr-[50px]">Questions or need
                 assistance? Let us know about it!</h2>
-            <p class="lg:hidden mb-4">Email us below to any question related to our event</p>
-            <form action="" method="post">
-                <input type="text" name="firstname" id="" placeholder="First Name"
-                    class="outline-0 w-full h-[37px] border pl-4 rounded bg-transparent block">
-                <input type="email" placeholder="Mail"
+            <p class="lg:hidden mb-4">Email us below for any question related to our event</p>
+            <!-- Here a loader is created which
+             loads till response comes -->
+            <div class="flex justify-center">
+                <div class="spinner-border" role="status" id="loading">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <form action="" method="post" id="contactForm">
+                <input type="text" name="first_name" id="firstName" placeholder="Enter your FirstName" required
+                    placeholder="First Name" class="outline-0 w-full h-[37px] border pl-4 rounded bg-transparent block">
+                <input type="email" name="email" id="email" required placeholder="Mail"
                     class="outline-0 w-full h-[37px] my-[22px] border pl-4 rounded bg-transparent block">
-                <textarea name="" id="" cols="30" rows="4" placeholder="Message"
+                <textarea name="message" id="messageBox" required cols="30" rows="4" placeholder="Message"
                     class="outline-0 w-full border p-4 rounded bg-transparent block"></textarea>
-                <button
+                <button type="submit" id="submitBtn"
                     class="nav-links bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] w-[172px] h-[53px] rounded mt-[21px] mx-auto block">Submit</button>
             </form>
         </section>
     </main>
+
+    <script src="./js/contactScript.js"></script>
 </body>
 
 </html>
