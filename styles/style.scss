@@ -160,52 +160,116 @@ html {
                 }
             }
 
-            // .intro{
-            //     overflow: hidden;
+            #intro{
+                overflow: hidden;
 
-            //     .intro-left{
-            //         @include transition-ease;
-            //         transform: translateX(-110%);
+                #intro-left{
+                    @include transition-ease;
+                    transform: translateX(-110%);
 
-            //         &.open{
-            //             @include transition-ease;
-            //             transform: translateX(0);
-            //         }
-            //     }
-            //     .intro-right{
-            //         @include transition-ease;
-            //         transform: translateX(120%);
+                    &.open{
+                        @include transition-ease;
+                        transform: translateX(0);
+                    }
+                }
+                #intro-right{
+                    @include transition-ease;
+                    transform: translateX(120%);
 
-            //         &.open{
-            //             @include transition-ease;
-            //             transform: translateX(0);
-            //         }
-            //     }
-            // }
-            // .guidelines{
-            //     overflow: hidden;
+                    &.open{
+                        @include transition-ease;
+                        transform: translateX(0);
+                    }
+                }
+            }
+            #guidelines{
+                overflow: hidden;
 
-            //     .guidelines-left{
-            //         @include transition-ease;
-            //         transform: translateX(-120%);
+                #guidelines-left{
+                    @include transition-ease;
+                    transform: translateX(-120%);
 
-            //         &.open{
-            //             @include transition-ease;
-            //             transform: translateX(0);
-            //         }
-            //     }
-            //     .guidelines-right{
-            //         @include transition-ease;
-            //         transform: translateX(120%);
+                    &.open{
+                        @include transition-ease;
+                        transform: translateX(0);
+                    }
+                }
+                #guidelines-right{
+                    @include transition-ease;
+                    transform: translateX(120%);
 
-            //         &.open{
-            //             @include transition-ease;
-            //             transform: translateX(0);
-            //         }
-            //     }
-            // }
+                    &.open{
+                        @include transition-ease;
+                        transform: translateX(0);
+                    }
+                }
+            }
+            #judging-criteria{
+                overflow: hidden;
 
-            .FAQs-dropdown {
+                #judging-criteria-left{
+                    @include transition-ease;
+                    transform: translateX(-120%);
+
+                    &.open{
+                        @include transition-ease;
+                        transform: translateX(0);
+                    }
+                }
+                #judging-criteria-right{
+                    @include transition-ease;
+                    transform: translateX(120%);
+
+                    &.open{
+                        @include transition-ease;
+                        transform: translateX(0);
+                    }
+                }
+            }
+            #guidelines{
+                overflow: hidden;
+
+                #guidelines-left{
+                    @include transition-ease;
+                    transform: translateX(-120%);
+
+                    &.open{
+                        @include transition-ease;
+                        transform: translateX(0);
+                    }
+                }
+                #guidelines-right{
+                    @include transition-ease;
+                    transform: translateX(120%);
+
+                    &.open{
+                        @include transition-ease;
+                        transform: translateX(0);
+                    }
+                }
+            }
+            #frequently-ask-quest{
+
+                #frequently-ask-left{
+                    @include transition-ease;
+                    transform: translateX(-130%);
+
+                    &.open{
+                        @include transition-ease;
+                        transform: translateX(0);
+                    }
+                }
+                #frequently-ask-right{
+                    @include transition-ease;
+                    transform: translateX(120%);
+
+                    &.open{
+                        @include transition-ease;
+                        transform: translateX(0);
+                    }
+                }
+
+               .FAQs-dropdown {
 
 
                 #frequently-ask-dropdown-item1 {
@@ -255,7 +319,9 @@ html {
                         display: block;
                     }
                 }
+            } 
             }
+            
         }
     }
 }

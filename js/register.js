@@ -10,7 +10,7 @@ const appFormElem = document.getElementById("AppForm");
 const btnElem = document.getElementById("btnElem");
 const popupElem = document.getElementById("successful-popup")
 popupElem.style.display = "none";
-
+appFormElem.style.display ="none";
 //SCRIPTS FOR FETCHING CATEGORIES DATA
 
 // Defining async function
@@ -32,6 +32,8 @@ getapi(categoriesUrl);
 // Function to hide the loader
 function hideloader() {
   document.getElementById("loading").style.display = "none";
+  appFormElem.style.display = "block";
+
 }
 // Function to define innerHTML for HTML Select Element
 

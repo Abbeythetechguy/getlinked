@@ -106,39 +106,131 @@ html body main .vuzual-logo span div {
 html body main .hero-section .hero-left .timer {
   font-family: "Unica One";
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item1 {
+html body main #intro {
+  overflow: hidden;
+}
+html body main #intro #intro-left {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-110%);
+}
+html body main #intro #intro-left.open {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+html body main #intro #intro-right {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(120%);
+}
+html body main #intro #intro-right.open {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+html body main #guidelines {
+  overflow: hidden;
+}
+html body main #guidelines #guidelines-left {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-120%);
+}
+html body main #guidelines #guidelines-left.open {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+html body main #guidelines #guidelines-right {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(120%);
+}
+html body main #guidelines #guidelines-right.open {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+html body main #judging-criteria {
+  overflow: hidden;
+}
+html body main #judging-criteria #judging-criteria-left {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-120%);
+}
+html body main #judging-criteria #judging-criteria-left.open {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+html body main #judging-criteria #judging-criteria-right {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(120%);
+}
+html body main #judging-criteria #judging-criteria-right.open {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+html body main #guidelines {
+  overflow: hidden;
+}
+html body main #guidelines #guidelines-left {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-120%);
+}
+html body main #guidelines #guidelines-left.open {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+html body main #guidelines #guidelines-right {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(120%);
+}
+html body main #guidelines #guidelines-right.open {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+html body main #frequently-ask-quest #frequently-ask-left {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-130%);
+}
+html body main #frequently-ask-quest #frequently-ask-left.open {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+html body main #frequently-ask-quest #frequently-ask-right {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(120%);
+}
+html body main #frequently-ask-quest #frequently-ask-right.open {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item1 {
   display: none;
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item1.open {
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item1.open {
   display: block;
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item2 {
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item2 {
   display: none;
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item2.open {
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item2.open {
   display: block;
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item3 {
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item3 {
   display: none;
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item3.open {
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item3.open {
   display: block;
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item4 {
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item4 {
   display: none;
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item4.open {
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item4.open {
   display: block;
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item5 {
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item5 {
   display: none;
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item5.open {
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item5.open {
   display: block;
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item6 {
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item6 {
   display: none;
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item6.open {
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item6.open {
   display: block;
 }/*# sourceMappingURL=style.css.map */
