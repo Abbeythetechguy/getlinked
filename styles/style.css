@@ -9,6 +9,7 @@
 }
 
 html body {
+  overflow-x: hidden;
   max-width: 1440px;
   margin: 0 auto;
   color: white;
@@ -17,7 +18,7 @@ html body {
   background-repeat: no-repeat;
 }
 html body .grad-btn:hover {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-image: linear-gradient(to right, #ab3082, rgb(172, 3, 172), #683ba2);
 }
 html body header {
@@ -29,7 +30,7 @@ html body header {
 html body header .hamburger-menu .hamburger {
   position: absolute;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-color: white;
 }
 html body header .hamburger-menu .hamburger::before {
@@ -52,7 +53,7 @@ html body header .hamburger-menu .hamburger::after {
   background-color: white;
 }
 html body header .hamburger-menu .hamburger.open {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   transform: rotate(180deg);
   background: transparent;
 }
@@ -76,21 +77,21 @@ html body header .hamburger-menu-border {
   border-image-slice: 1;
 }
 html body header .mobile-nav {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   visibility: hidden;
   transform: translateY(-100%);
 }
 html body header .mobile-nav.open {
   visibility: visible;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   transform: translateY(0);
 }
 html body header .mobile-nav .mobile-nav-links {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   transform: translateX(-100%);
 }
 html body header .mobile-nav .mobile-nav-links.open {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   transform: translateX(0);
 }
 html body main .vuzual-logo {
@@ -103,42 +104,199 @@ html body main .vuzual-logo span b {
 html body main .vuzual-logo span div {
   font-size: 30%;
 }
-html body main .hero-section .hero-left .timer {
+html body main #hero-section .main-hero #hero-section-left {
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+}
+html body main #hero-section .main-hero #hero-section-left.open {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+}
+html body main #hero-section .main-hero #hero-section-left .timer {
   font-family: "Unica One";
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item1 {
+html body main #hero-section .main-hero #hero-section-right.open #universe-like-stuff {
+  transition: 10s;
+  transform: rotate(1360deg);
+}
+html body main #intro {
+  overflow: hidden;
+}
+html body main #intro #intro-left {
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-110%);
+}
+html body main #intro #intro-left.open {
+  transition: all 0.3s ease-in-out;
+  transform: translateX(0);
+}
+html body main #intro #intro-right {
+  transition: all 0.3s ease-in-out;
+  transform: translateX(120%);
+}
+html body main #intro #intro-right.open {
+  transition: all 0.3s ease-in-out;
+  transform: translateX(0);
+}
+html body main #guidelines {
+  overflow: hidden;
+}
+html body main #guidelines #guidelines-left {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(120%);
+}
+html body main #guidelines #guidelines-left.open {
+  transition: all 0.3s ease-in-out;
+  transform: translateY(0);
+}
+html body main #guidelines #guidelines-right {
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+}
+html body main #guidelines #guidelines-right.open {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+html body main #judging-criteria {
+  overflow: hidden;
+}
+html body main #judging-criteria #judging-criteria-left {
+  transition: all 0.3s ease-in-out;
+  transform: translatey(-120%);
+}
+html body main #judging-criteria #judging-criteria-left.open {
+  transition: all 0.3s ease-in-out;
+  transform: translatey(0);
+}
+html body main #judging-criteria #judging-criteria-right {
+  transition: all 0.3s ease-in-out;
+  transform: translateX(120%);
+}
+html body main #judging-criteria #judging-criteria-right.open {
+  transition: all 0.3s ease-in-out;
+  transform: translateX(0);
+}
+html body main #frequently-ask-quest #frequently-ask-left {
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-130%);
+}
+html body main #frequently-ask-quest #frequently-ask-left.open {
+  transition: all 0.3s ease-in-out;
+  transform: translateX(0);
+}
+html body main #frequently-ask-quest #frequently-ask-right {
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+}
+html body main #frequently-ask-quest #frequently-ask-right.open {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+}
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item1 {
   display: none;
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item1.open {
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item1.open {
   display: block;
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item2 {
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item2 {
   display: none;
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item2.open {
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item2.open {
   display: block;
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item3 {
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item3 {
   display: none;
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item3.open {
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item3.open {
   display: block;
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item4 {
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item4 {
   display: none;
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item4.open {
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item4.open {
   display: block;
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item5 {
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item5 {
   display: none;
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item5.open {
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item5.open {
   display: block;
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item6 {
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item6 {
   display: none;
 }
-html body main .FAQs-dropdown #frequently-ask-dropdown-item6.open {
+html body main #frequently-ask-quest .FAQs-dropdown #frequently-ask-dropdown-item6.open {
   display: block;
+}
+html body main #timeline #timetable #timetable-one {
+  transition: 0.5s ease-in-out;
+  transform: scale(0);
+}
+html body main #timeline #timetable #timetable-one.open {
+  transition: 0.5s ease-in-out;
+  transform: scale(1);
+}
+html body main #timeline #timetable #timetable-two {
+  transition: 0.7s ease-in-out;
+  transform: scale(0);
+}
+html body main #timeline #timetable #timetable-two.open {
+  transition: 0.7s ease-in-out;
+  transform: scale(1);
+}
+html body main #timeline #timetable #timetable-three {
+  transition: 1s ease-in-out;
+  transform: scale(0);
+}
+html body main #timeline #timetable #timetable-three.open {
+  transition: 1s ease-in-out;
+  transform: scale(1);
+}
+html body main #timeline #timetable #timetable-four {
+  transition: 1.3s ease-in-out;
+  transform: scale(0);
+}
+html body main #timeline #timetable #timetable-four.open {
+  transition: 1.3s ease-in-out;
+  transform: scale(1);
+}
+html body main #timeline #timetable #timetable-five {
+  transition: 1.7s ease-in-out;
+  transform: scale(0);
+}
+html body main #timeline #timetable #timetable-five.open {
+  transition: 1.7s ease-in-out;
+  transform: scale(1);
+}
+html body main #timeline #timetable #timetable-six {
+  transition: 2s ease-in-out;
+  transform: scale(0);
+}
+html body main #timeline #timetable #timetable-six.open {
+  transition: 2s ease-in-out;
+  transform: scale(1);
+}
+html body main #partners #partners-logo {
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+}
+html body main #partners #partners-logo.open {
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+}
+html body main #privacy #privacy-left {
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-120%);
+}
+html body main #privacy #privacy-left.open {
+  transition: all 0.3s ease-in-out;
+  transform: translateX(0);
+}
+html body main #privacy #privacy-right {
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+}
+html body main #privacy #privacy-right.open {
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=style.css.map */

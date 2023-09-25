@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body onscroll="onScroll()" onload="heroSec()">
     <header class="flex justify-between items-center h-[80px] border-gray-500 border-b xl:px-24 lg:px-20 md:px-16 px-4 ">
         <div class="logo xl:text-3xl lg:text-2xl text-xl font-black">
             get<span class="text-[#D434FE]">linked</span>
@@ -41,7 +41,7 @@
         </nav>
     </header>
     <main>
-        <section class="hero-section xl:pl-24 lg:pl-20 border-gray-700 border-b">
+        <section id="hero-section" class="xl:pl-24 lg:pl-20 border-gray-700 border-b">
             <div class="flex xl:justify-end lg:justify-end static z-55 justify-center w-[100%] mt-2 lg:mb-6">
                 <h1 class=" text-l xl:text-3xl lg:text-2xl md:text-2xl italic font-black relative lg:pr-16">
                     Igniting a Revolution
@@ -51,9 +51,8 @@
 
             <img src="./images/Purple-Lens-Flare.svg" alt="" class="xl:w-[800px] lg:w-[600px] absolute top-10 lg:top-[-10%] xl:left-0 lg:left-[-10] left-[-40px]">
 
-            <div class="flex flex-col lg:flex-row">
-                <div
-                    class="hero-left xl:w-[50%] lg:w-[50%] w-[100%] xl:h-[450px] lg:h-[420px] h-[400px] relative flex flex-col justify-center items-center xl:items-start lg:items-start">
+            <div class="main-hero flex flex-col lg:flex-row">
+                <div id="hero-section-left"  class="xl:w-[50%] lg:w-[50%] w-[100%] xl:h-[450px] lg:h-[420px] h-[400px] relative flex flex-col justify-center items-center xl:items-start lg:items-start">
                     <img src="./images/star.png" alt="" class="absolute top-2 xl:left-0 left-20 w-[4%]">
                     <img src="./images/star.png" alt="" class="absolute top-2 xl:right-0 right-10 w-[3%]">
                     <img src="./images/star.png" alt="" class="absolute bottom-32 xl:right-0 right-14 w-[2%]">
@@ -73,27 +72,23 @@
                         a chance to win a Big prize</p>
                     <a href="./register.html"
                         class="grad-btn bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] w-[172px] h-[53px] rounded flex justify-center items-center">Register</a>
-                    <div
-                        class="flex justify-center xl:justify-start lg:justify-start xl:mt-[47px] lg:mt-[40px] mt-[20px]">
+                    <div class="flex justify-center xl:justify-start lg:justify-start xl:mt-[47px] lg:mt-[40px] mt-[20px]">
                         <span class="text-5xl timer mr-2">00<b class="text-lg font-light">H</b> </span>
                         <span class="text-5xl timer mr-2">00<b class="text-lg font-light">M</b> </span>
                         <span class="text-5xl timer mr-2">00<b class="text-lg font-light">S</b> </span>
                     </div>
                 </div>
 
-                <div
-                    class="hero-right xl:w-[50%] lg:w-[60%] w-[100%] xl:mt-5 h-full relative bg-[url('./images/metrix1.png')] bg-cover">
+                <div id="hero-section-right" class="xl:w-[50%] lg:w-[60%] w-[100%] xl:mt-5 h-full relative bg-[url('./images/metrix1.png')] bg-cover">
                     <img src="./images/man-wearing-smart-glasses-touching-virtual-screen 1.svg" alt=""
                         class="hero-img relative xl:right-[100px] xl:h-[485px] lg:h-[416px]  w-full">
-                    <img src="./images/universe-like-stuff.svg" alt=""
-                        class="absolute top-0 md:top-5 md:right-10 xl:top-0 xl:right-[200px] lg:top-[-15px] lg:right-[60px] xl:w-4/5 lg:w-4/5 md:w-4/5 w-[300px]">
+                    <img src="./images/universe-like-stuff.svg" alt="" id="universe-like-stuff" class="absolute top-0 md:top-5 md:right-10 xl:top-0 xl:right-[200px] lg:top-[-15px] lg:right-[60px] xl:w-4/5 lg:w-4/5 md:w-4/5 w-[300px]">
                     <img src="./images/Purple-Lens-Flare-2.svg" alt="" class="absolute top-5 left-0 z-[-1]">
                 </div>
             </div>
 
         </section>
-        <section id="intro"
-            class="xl:flex gap-5 lg:flex block xl:px-24 lg:px-20 md:px-16 px-4 py-14 border-gray-700 border-b">
+        <section id="intro" class="xl:flex gap-5 lg:flex block xl:px-24 lg:px-20 md:px-16 px-4 py-14 border-gray-700 border-b">
             <div id="intro-left" class=" xl:w-1/2 lg:w-1/2 flex justify-center xl:block lg:block relative">
                 <img src="./images/star pu.svg" alt="" class="absolute w-[3%] left-0 top-20">
                 <img src="./images/the big idea 1.svg" alt="">
@@ -116,8 +111,7 @@
                     that's what we're all about!</p>
             </div>
         </section>
-        <section id="guidelines"
-            class=" flex gap-5 xl:flex-row lg:flex-row relative overflow-hidden flex-col-reverse xl:px-24 lg:px-20 md:px-16 px-4 pb-14 border-gray-700 border-b">
+        <section id="guidelines" class=" flex gap-5 xl:flex-row lg:flex-row relative overflow-hidden flex-col-reverse xl:px-24 lg:px-20 md:px-16 px-4 pb-14 border-gray-700 border-b">
             <div id="guidelines-left" class=" xl:w-1/2 lg:w-1/2 w-full flex flex-col justify-center">
                 <h1 class="text-xl xl:text-2xl font-black pb-[10px] text-center xl:text-left lg:text-left  relative">
                     Rules and<br> <span class="text-[#D434FE]">Guidelines</span>
@@ -146,8 +140,7 @@
                 <img src="./images/woman-reading.svg" alt="">
             </div>
         </section>
-        <section id="judging-criteria"
-            class=" xl:flex lg:flex block gap-10 relative overflow-hidden xl:px-24 lg:px-20 md:px-16 px-4 py-14 border-gray-700 border-b">
+        <section id="judging-criteria" class=" xl:flex lg:flex block gap-10 relative overflow-hidden xl:px-24 lg:px-20 md:px-16 px-4 py-14 border-gray-700 border-b">
             <div id="judging-criteria-left" class=" xl:w-1/2 lg:w-1/2 flex justify-center xl:block lg:block relative">
                 <img src="./images/star pu.svg" alt=""
                     class="absolute w-[3%] top-[-35px] xl:left-0 lg:left-0 xl:top-0 lg:top-0">
@@ -211,8 +204,7 @@
                 </section>
             </div>
         </section>
-        <section id="frequently-ask-quest"
-            class=" flex xl:flex-row lg:flex-row flex-col overflow-hidden xl:px-24 lg:px-20 md:px-16 px-4 py-8 border-gray-700 border-b">
+        <section id="frequently-ask-quest" class=" flex xl:flex-row lg:flex-row flex-col xl:px-24 lg:px-20 md:px-16 px-4 py-8 border-gray-700 border-b">
             <div id="frequently-ask-left" class=" xl:w-[40%] lg:w-[40%] w-full flex flex-col justify-center">
                 <h1 class="text-xl xl:text-2xl font-black pb-[10px] text-center xl:text-left lg:text-left  relative">
                     Frequently Asked<br> <span class="text-[#D434FE]">Question</span>
@@ -296,8 +288,8 @@
                 class="absolute w-[5%] lg:w-[2%] top-[50%] right-16 lg:right-[250px] lg:top-[43%]">
             <img src="./images/star-ash.svg" alt=""
                 class="absolute w-[5%] lg:w-[2%] left-2 bottom-10 lg:left-[180px] lg:bottom-32">
-            <div class="timetable">
-                <section class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
+            <div id="timetable">
+                <section id="timetable-one" class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
                     <div class="col-start-2  xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right">
                         <h3 class="text-[#D434FE] font-bold">Hackathon Announcement</h3>
                         <p class="">The getlinked tech hackathon 1.0 is formally announced to the general public and
@@ -311,7 +303,7 @@
                     </span>
                     <h3 class="text-[#D434FE]  font-bold col-start-2 xl:w-[45%] lg:w-[45%]">November 18, 2023</h3>
                 </section>
-                <section class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
+                <section id="timetable-two"  class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
                     <h3 class="text-[#D434FE] font-bold col-start-2  xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right">
                         November 18, 2023</h3>
                     <span
@@ -326,7 +318,7 @@
                             2023 by proceeding to register</p>
                     </div>
                 </section>
-                <section class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
+                <section id="timetable-three"  class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
                     <div class="col-start-2 xl:w-[45%] lg:w-[45%] w-[90%] xl:text-right lg:text-right">
                         <h3 class="text-[#D434FE] font-bold">Teams Registration ends</h3>
                         <p class="">Interested Participants are no longer Allowed to register </p>
@@ -339,7 +331,7 @@
                     </span>
                     <h3 class="text-[#D434FE] font-bold col-start-2 xl:w-[45%] lg:w-[45%]">November 18, 2023</h3>
                 </section>
-                <section class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
+                <section id="timetable-four"  class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
                     <h3 class="text-[#D434FE] font-bold col-start-2 xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right ">
                         November 18, 2023</h3>
                     <span
@@ -354,7 +346,7 @@
                             formally announced</p>
                     </div>
                 </section>
-                <section class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
+                <section id="timetable-five"  class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
                     <div class="col-start-2 xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right">
                         <h3 class="text-[#D434FE] font-bold">Getlinked Hackathon 1.0 Offically Begins</h3>
                         <p class="">Accepted teams can now proceed to build their ground breaking skill driven solutions
@@ -368,7 +360,7 @@
                     </span>
                     <h3 class="text-[#D434FE] font-bold col-start-2 xl:w-[45%] lg:w-[45%] ">November 18, 2023</h3>
                 </section>
-                <section class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
+                <section id="timetable-six"  class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
                     <h3 class="text-[#D434FE] font-bold col-start-2  xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right">
                         November 18, 2023</h3>
                     <span
@@ -444,7 +436,7 @@
             </div>
 
         </section>
-        <section id="partners" class="xl:px-24 lg:px-20 md:px-16 px-4 py-14 border-gray-700 border-b relative overflow-hidden">
+        <section id="partners" onmouseenter="partnersOverEffect()" class="xl:px-24 lg:px-20 md:px-16 px-4 py-14 border-gray-700 border-b relative overflow-hidden">
             <h1 class="text-center text-xl xl:text-3xl md:text-2xl mb-[22px] font-bold">Partners and Sponsors</h1>
             <p class="text-center">Getlinked Hackathon 1.0 is honored to have the following major companies as its
                 partners and sponsors
@@ -453,8 +445,7 @@
                 <img src="./images/Purple-Lens-Flare.svg" alt="" class="xl:w-[800px]  lg:w-[700px] absolute z-[-1] top-[-10%] lg:top-0 xl:top-[10px] xl:left-0 lg:left-[-10%] left-[-40px]">
                 <img src="./images/Purple-Lens-Flare.svg" alt="" class="xl:w-[800px] lg:w-[600px] absolute z-[-1]  bottom-[-10%] lg:bottom-[-20%] lg:right-[-25%] right-[-60%]">
 
-            <div
-                class="grid grid-cols-3 grid-rows-2 items-center relative border-2 rounded-xl border-[#D434FE] p-6 lg:p-[80px] xl:p-[120px] mt-[41px] sm:mt-[65px]">
+            <div id="partners-logo"class="grid grid-cols-3 grid-rows-2 items-center relative border-2 rounded-xl border-[#D434FE] p-6 lg:p-[80px] xl:p-[120px] mt-[41px] sm:mt-[65px]">
                 <span class=" border-b-4 border-[#D434FE] flex justify-center items-center pb-4"><img
                         src="./images/Liberty company logo white colour.svg" alt=""
                         class="w-[50px] sm:w-[120px]"></span>
@@ -482,9 +473,8 @@
             </div>
 
         </section>
-        <section id="privacy"
-            class=" xl:flex lg:flex justify-center relative block gap-10 xl:px-24 lg:px-20 md:px-16 px-4 pt-14 pb-32 ">
-            <div class="lg:w-[50%] w-full flex flex-col justify-center relative lg:pt-8 xl:pt-14">
+        <section id="privacy" onmouseenter="privacyOverEffect()" class=" xl:flex lg:flex justify-center relative block gap-10 xl:px-24 lg:px-20 md:px-16 px-4 pt-14 pb-32 ">
+            <div id="privacy-left" class="lg:w-[50%] w-full flex flex-col justify-center relative lg:pt-8 xl:pt-14">
                 <h1 class="text-xl xl:text-2xl font-black pb-[10px] text-center lg:text-left  relative">
                     Privacy Policy and <br> <span class="text-[#D434FE]">Terms</span>
                 </h1>
@@ -528,8 +518,7 @@
                     class="absolute w-[3%] left-[-4%] md:left-[-10%] bottom-[200px] ">
                 <img src="./images/star pu.svg" alt="" class="absolute w-[3%] right-2 top-[200px] lg:top-10 ">
             </div>
-            <div
-                class="lg:w-[50%] w-full mx-auto sm:w-[80%] mt-20 lg:mt-0 bg-[url('./images/security.svg')] relative bg-contain bg-no-repeat">
+            <div id="privacy-right" class="lg:w-[50%] w-full mx-auto sm:w-[80%] mt-20 lg:mt-0 bg-[url('./images/security.svg')] relative bg-contain bg-no-repeat">
                 <img src="./images/privacy.svg" alt="" class="relative top-[120px] lg:top-[170px] xl:top-[230px]">
                 <img src="./images/star-ash.svg" alt="" class="absolute right-0 bottom-0 lg:bottom-[30%] w-[4%]">
                 <img src="./images/star.png" alt="" class="absolute right-[20%] top-[14%] w-[4%]">
@@ -544,14 +533,14 @@
             <div class="lg:w-[50%]">
                 <div class="logo xl:text-3xl lg:text-2xl text-xl font-black">get<span
                         class="text-[#D434FE]">linked</span></div>
-                <p class="mt-6 mb-10 lg:mb-20 lg:text-[14px] xl:text-xl lg:pr-12">Getlinked Tech Hackathon is a
+                <p class="mt-6 mb-10 lg:mb-20 lg:text-[14px] xl:text-[16px] lg:pr-12">Getlinked Tech Hackathon is a
                     technology innovation program
                     established by a group of organizations with the aim of showcasing
                     young and talented individuals in the field of technology</p>
                 <div class="mb-10"><span class="border-r-4 border-[#D434FE] pr-4">Term of Use</span> <span
                         class="px-4">Privacy Policy</span></div>
             </div>
-            <ul class="lg:w-[28%]  lg:text-[14px] xl:text-xl relative">
+            <ul class="lg:w-[28%]  lg:text-[14px] xl:text-[16px]relative">
                 <h1 class="font-bold text-[#D434FE]">Useful Links</h1>
                 <li class="my-2"><a href="">Overview</a></li>
                 <li class="my-2"><a href="./timeline.html">Timeline</a></li>
@@ -568,7 +557,7 @@
                         href="https://www.linkedin.com/in/abbey-ezeilo-15474627b" target="_blank"><i
                             class="fa-brands fa-linkedin-in text-[25px]"></i></a></li>
             </ul>
-            <ul class="lg:w-[22%]  lg:text-[14px] xl:text-xl">
+            <ul class="lg:w-[22%]  lg:text-[14px] xl:text-[16px]">
                 <h1 class="font-bold text-[#D434FE]">Contact Us</h1>
                 <li><a href="" class="flex gap-4 my-2"><i class="fa-solid fa-phone-volume text-xl"></i>
                         <p>+234 8088 423 637</p>
