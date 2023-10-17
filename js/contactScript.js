@@ -11,13 +11,11 @@ formElem.addEventListener("submit", async (event) => {
   //event.preventDefault() method is to prevent the browser from refreshing the page.
   event.preventDefault();
 
-//   let phoneNoElem = document.getElementById("phoneNumber");
   let firstNameElem = document.getElementById("firstName");
   let emailElem = document.getElementById("email");
   let messageBoxElem = document.getElementById("messageBox");
 
   if (
-    // phoneNoElem.value == "" ||
     firstNameElem.value == "" ||
     emailElem.value == "" ||
     messageBoxElem.value == ""

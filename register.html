@@ -19,9 +19,8 @@
             get<span class="text-[#D434FE]">linked</span>
         </div>
         <nav class="xl:gap-10 lg:gap-6 items-center hidden xl:flex lg:flex ">
+            <a href="./index.html" class="nav-links">Home</a>
             <a href="./timeline.html" class="nav-links">Timeline</a>
-            <a href="" class="nav-links">Overview</a>
-            <a href="" class="nav-links">FAQs</a>
             <a href="./contactpage.html" class="nav-links">Contact</a>
             <a href=""
                 class="grad-btn nav-links  w-[172px] h-[53px] rounded flex justify-center items-center">Register</a>
@@ -31,7 +30,8 @@
     <main class="flex relative flex-col lg:flex-row gap-10 items-center xl:px-24 lg:px-20 md:px-16 px-4 py-4">
         <section class="lg:w-[35%] xl:w-[40%] w-full">
             <h2 class="text-[#D434FE] lg:hidden text-2xl font-bold mb-4">Register</h2>
-            <img src="./images/3d-graphic-designer-showing-thumbs-up-png 1.svg" alt="" class="w-full h-[195px] md:h-[300px] lg:h-full">
+            <img src="./images/3d-graphic-designer-showing-thumbs-up-png 1.svg" alt=""
+                class="w-full h-[195px] md:h-[300px] lg:h-full">
         </section>
 
         <img src="./images/Purple-Lens-Flare.svg" alt=""
@@ -41,56 +41,66 @@
 
 
         <!-- The stars -->
-        <img src="./images/star pu.svg" alt="" class="absolute right-[5%] top-[15%] w-[4%] lg:left-[100px] lg:top-[100px] lg:w-[2%]"> 
-        <img src="./images/star pu.svg" alt="" class="absolute right-[5%] bottom-[26%] w-[4%] lg:left-[35%] lg:bottom-[40%] lg:w-[2%]">
+        <img src="./images/star pu.svg" alt=""
+            class="absolute right-[5%] top-[15%] w-[4%] lg:left-[100px] lg:top-[100px] lg:w-[2%]">
+        <img src="./images/star pu.svg" alt=""
+            class="absolute right-[5%] bottom-[26%] w-[4%] lg:left-[35%] lg:bottom-[40%] lg:w-[2%]">
         <img src="./images/star.png" alt="" class="absolute hidden lg:block lg:left-[100px] lg:bottom-[100px] w-[2%]">
-        <img src="./images/star-ash.svg" alt="" class="absolute right-[96%] top-[40%]  w-[4%] lg:right-[25%] lg:top-[20px] lg:w-[2%]">
+        <img src="./images/star-ash.svg" alt=""
+            class="absolute right-[96%] top-[40%]  w-[4%] lg:right-[25%] lg:top-[20px] lg:w-[2%]">
         <img src="./images/star.png" alt="" class="absolute hidden lg:block lg:right-[15%] lg:bottom-0 w-[1%]">
 
 
         <section class="lg:w-[65%] xl:w-[60%] w-full lg:bg-[#3f2e694b] rounded-xl xl:px-18 lg:px-12 xl:py-4 lg:py-4 ">
 
             <h2 class="text-[#D434FE] text-2xl hidden lg:block font-bold mb-4 lg:mb-2">Register</h2>
-            <p class=" mb-4 lg:mb-2 flex">Be part of this movement!<span class="flex justify-center border-b border-dotted border-[#D434FE] w-[60px] lg:w-[100px]"><img src="./images/walking-sticker.svg" alt=""><img src="./images/walking-sticker-2.svg" alt=""></span></p>
+            <p class=" mb-4 lg:mb-2 flex">Be part of this movement!<span
+                    class="flex justify-center border-b border-dotted border-[#D434FE] w-[60px] lg:w-[100px]"><img
+                        src="./images/walking-sticker.svg" alt=""><img src="./images/walking-sticker-2.svg"
+                        alt=""></span></p>
             <h1 class="text-2xl lg:text-xl cl:text-2xl">CREATE YOUR ACCOUNT</h1>
-             <!-- Here a loader is created which
+            <!-- Here a loader is created which
              loads till response comes -->
-             <div class="grid place-items-center">
-                <div class="spinner-border" role="status" id="loading">
-                    <span class="">Loading...</span>
-                </div>
+            <div role="status" id="loading" class="grid place-items-center h-[200px]">
+                <div class="custom-loader"></div>
             </div>
-            <form action=""  method="post" id="AppForm">
+            <form action="" method="post" id="AppForm">
                 <div class=" lg:grid grid-cols-2 la gap-x-6">
                     <div class=" block col-start-1 row-start-1 mb-6 lg:mb-2">
                         <label for="">Team's Name</label>
-                        <input type="text" name="team_name" id="teamInput" required value="" placeholder="Enter the name of your group"
+                        <input type="text" name="team_name" id="teamInput" required value=""
+                            placeholder="Enter the name of your group"
                             class="outline-0 w-full h-[37px] border pl-4 lg:pl-2 rounded bg-transparent">
                     </div>
                     <div class=" block col-start-2 mb-6 lg:mb-2">
                         <label for="">Phone</label>
-                        <input type="tel" name="phone_number" id="phoneInput" value="" required placeholder="Enter your phone number"
+                        <input type="tel" name="phone_number" id="phoneInput" value="" required
+                            placeholder="Enter your phone number"
                             class="outline-0 w-full h-[37px] border pl-4 lg:pl-2 rounded bg-transparent">
                     </div>
                     <div class="block col-start-1 row-start-2 mb-6 lg:mb-2">
                         <label for="">Email</label>
-                        <input type="email"  name="email" id="emailInput" value="" required placeholder="Enter your email address"
+                        <input type="email" name="email" id="emailInput" value="" required
+                            placeholder="Enter your email address"
                             class="outline-0 w-full h-[37px] border pl-4 lg:pl-2 rounded bg-transparent">
                     </div>
                     <div class=" block  col-start-2 row-start-2 mb-6 lg:mb-2">
                         <label for="">Project Topic</label>
-                        <input type="text" name="project_topic" id="projectInput" value="" required placeholder="What is your group project topic"
+                        <input type="text" name="project_topic" id="projectInput" value="" required
+                            placeholder="What is your group project topic"
                             class="outline-0 w-full h-[37px] border pl-4 lg:pl-2 rounded bg-transparent">
                     </div>
                     <div class="inline-block w-[60%] mr-2 lg:w-full col-start-1 row-start-3 mb-6 lg:mb-2">
                         <label for="">Category</label>
-                        <select name="category" id="categories" required class="outline-0 w-full h-[37px] border lg:pl-2 rounded bg-transparent">
+                        <select name="category" id="categories" required
+                            class="outline-0 w-full h-[37px] border lg:pl-2 rounded bg-transparent">
                             <!-- <option value="">Select your Category</option> -->
                         </select>
                     </div>
                     <div class="inline-block w-[35%] lg:w-full col-start-2 row-start-3 mb-6 lg:mb-2">
                         <label for="">Group Size</label>
-                        <select name="group_size" id="group" required id="group" class="outline-0 w-full h-[37px] border  lg:pl-2 rounded bg-transparent">
+                        <select name="group_size" id="group" required id="group"
+                            class="outline-0 w-full h-[37px] border  lg:pl-2 rounded bg-transparent">
                             <option value="">select</option>
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -107,31 +117,40 @@
                 </div>
                 <p class="italic text-[#D434FE]">Please review your registration details before submitting</p>
                 <span class="flex items-center">
-                    <input type="checkbox"  name="privacy_poclicy_accepted" onclick="checkValidity()" checked id="acceptTerms" value="false" required class="bg-transparent mr-2 checkbox">
-                    <p>I agreed with the event terms and conditions  and privacy policy</p>
+                    <input type="checkbox" name="privacy_poclicy_accepted" onclick="checkValidity()" checked
+                        id="acceptTerms" value="false" required class="bg-transparent mr-2 checkbox">
+                    <p>I agreed with the event terms and conditions and privacy policy</p>
                 </span>
 
-                <button id="btnElem" class="nav-links bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] w-[172px] lg:w-full h-[53px] rounded mt-[21px] mx-auto block"><p class="hidden lg:block">Register Now</p> <p class="lg:hidden">Submit</p></button>
+                <button id="btnElem"
+                    class="nav-links bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] w-[172px] lg:w-full h-[53px] rounded mt-[21px] mx-auto block">
+                    <p class="hidden lg:block">Register Now</p>
+                    <p class="lg:hidden">Submit</p>
+                </button>
             </form>
         </section>
     </main>
-    
+
     <!-- this is the successful registration pop up -->
-    <div id="successful-popup" class="z-[30] hidden fixed backdrop-blur-[1px] h-[100vh] grid place-items-center w-full bg-[#150e28c6] top-0">
+    <div id="successful-popup"
+        class="z-[30] hidden fixed backdrop-blur-[1px] h-[100vh] grid place-items-center w-full bg-[#150e28c6] top-0">
         <section class="success relative w-[90%] lg:w-[40%] mx-auto lg:h-[464px] p-4 lg:p-10">
             <div class="relative mx-auto w-[200px] md:w-[80%] lg:w-full">
-                <img src="./images/successfully-done.svg" alt="" class="absolute top-0 left-0 md:left-[30%] lg:left-[20%] w-[170px]">
-                <img src="./images/successful-man.svg" alt="" class="relative h-[200px] lg:w-[300px] md:left-[40%] lg:left-[20%] left-[60px]">
+                <img src="./images/successfully-done.svg" alt=""
+                    class="absolute top-0 left-0 md:left-[30%] lg:left-[20%] w-[170px]">
+                <img src="./images/successful-man.svg" alt=""
+                    class="relative h-[200px] lg:w-[300px] md:left-[40%] lg:left-[20%] left-[60px]">
             </div>
             <h1 class="text-2xl text-center font-bold lg:w">Congratulations <br> you have successfully Registered!</h1>
             <p class=" text-center">Yes, it was easy and you did it!<br>
                 check your mail box for next step <img src="./images/wink emoji.svg" alt="" class="inline"></p>
-                <a href="./index.html" class="nav-links bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] grid place-items-center w-full h-[53px] rounded mt-[21px] ">Back</a>
+            <a href="./index.html"
+                class="nav-links bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] grid place-items-center w-full h-[53px] rounded mt-[21px] ">Back</a>
 
-                <img src="./images/star pu.svg" alt="" class="absolute top-[-10%] lg:top-0 right-0 lg:right-[-2%] w-[3%]">
-                <img src="./images/star.png" alt="" class="absolute top-[30%] left-10 w-[3%]">
-                <img src="./images/star-pink.svg" alt="" class="absolute bottom-[-10%] lg:bottom-2 right-10 w-[3%]">
-                
+            <img src="./images/star pu.svg" alt="" class="absolute top-[-10%] lg:top-0 right-0 lg:right-[-2%] w-[3%]">
+            <img src="./images/star.png" alt="" class="absolute top-[30%] left-10 w-[3%]">
+            <img src="./images/star-pink.svg" alt="" class="absolute bottom-[-10%] lg:bottom-2 right-10 w-[3%]">
+
         </section>
     </div>
 

@@ -10,6 +10,7 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -19,9 +20,9 @@
             get<span class="text-[#D434FE]">linked</span>
         </div>
         <nav class="xl:gap-10 lg:gap-6 items-center hidden xl:flex lg:flex ">
-            <a href="./timeline.html" class="nav-links">Timeline</a>
-            <a href="" class="nav-links">Overview</a>
-            <a href="" class="nav-links">FAQs</a>
+            <a href="#timeline" class="nav-links">Timeline</a>
+            <a href="#overview" class="nav-links">Overview</a>
+            <a href="#faq" class="nav-links">FAQs</a>
             <a href="./contactpage.html" class="nav-links">Contact</a>
             <a href="./register.html"
                 class="grad-btn nav-links bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] w-[172px] h-[53px] rounded flex justify-center items-center">Register</a>
@@ -42,7 +43,7 @@
     </header>
     <main>
         <section id="hero-section" class="xl:pl-24 lg:pl-20 border-gray-700 border-b">
-            <div class="flex xl:justify-end lg:justify-end static z-55 justify-center w-[100%] mt-2 lg:mb-6">
+            <div data-aos="fade-left" class="flex xl:justify-end lg:justify-end static z-55 justify-center w-[100%] mt-2 lg:mb-6">
                 <h1 class=" text-l xl:text-3xl lg:text-2xl md:text-2xl italic font-black relative lg:pr-16">
                     Igniting a Revolution
                     in HR Innovation <img src="./images/fancy-border.svg" alt=""
@@ -52,7 +53,7 @@
             <img src="./images/Purple-Lens-Flare.svg" alt="" class="xl:w-[800px] lg:w-[600px] absolute top-10 lg:top-[-10%] xl:left-0 lg:left-[-10] left-[-40px]">
 
             <div class="main-hero flex flex-col lg:flex-row">
-                <div id="hero-section-left"  class="xl:w-[50%] lg:w-[50%] w-[100%] xl:h-[450px] lg:h-[420px] h-[400px] relative flex flex-col justify-center items-center xl:items-start lg:items-start">
+                <div id="hero-section-left" data-aos="fade-up" data-aos-duration="2000" class="xl:w-[50%] lg:w-[50%] w-[100%] xl:h-[450px] lg:h-[420px] h-[400px] relative flex flex-col justify-center items-center xl:items-start lg:items-start">
                     <img src="./images/star.png" alt="" class="absolute top-2 xl:left-0 left-20 w-[4%]">
                     <img src="./images/star.png" alt="" class="absolute top-2 xl:right-0 right-10 w-[3%]">
                     <img src="./images/star.png" alt="" class="absolute bottom-32 xl:right-0 right-14 w-[2%]">
@@ -73,9 +74,9 @@
                     <a href="./register.html"
                         class="grad-btn bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] w-[172px] h-[53px] rounded flex justify-center items-center">Register</a>
                     <div class="flex justify-center xl:justify-start lg:justify-start xl:mt-[47px] lg:mt-[40px] mt-[20px]">
-                        <span class="text-5xl timer mr-2">00<b class="text-lg font-light">H</b> </span>
-                        <span class="text-5xl timer mr-2">00<b class="text-lg font-light">M</b> </span>
-                        <span class="text-5xl timer mr-2">00<b class="text-lg font-light">S</b> </span>
+                        <span class="text-5xl timer mr-4 flex items-end"><p id="timer"></p><b class="text-lg font-light">H</b> </span>
+                        <span class="text-5xl timer mr-4 flex items-end"><p id="timeMin"></p><b class="text-lg font-light">M</b> </span>
+                        <span class="text-5xl timer mr-4 flex items-end"><p id="timeSec"></p><b class="text-lg font-light">S</b> </span>
                     </div>
                 </div>
 
@@ -88,20 +89,20 @@
             </div>
 
         </section>
-        <section id="intro" class="xl:flex gap-5 lg:flex block xl:px-24 lg:px-20 md:px-16 px-4 py-14 border-gray-700 border-b">
-            <div id="intro-left" class=" xl:w-1/2 lg:w-1/2 flex justify-center xl:block lg:block relative">
+        <section id="overview" class="xl:flex gap-5 lg:flex block xl:px-24 lg:px-20 md:px-16 px-4 py-14 border-gray-700 border-b">
+            <div id="intro-left" data-aos="fade-right" class=" xl:w-1/2 lg:w-1/2 flex justify-center xl:block lg:block relative">
                 <img src="./images/star pu.svg" alt="" class="absolute w-[3%] left-0 top-20">
                 <img src="./images/the big idea 1.svg" alt="">
                 <img src="./images/arrow.png" alt=""
                     class="absolute bottom-[-30px] xl:w-[49px] lg:w-[49px] xl:right-10 lg:right-10">
             </div>
-            <div id="intro-right" class=" xl:w-1/2 lg:w-1/2 w-full flex flex-col justify-center mt-16">
+            <div id="intro-right" data-aos="fade-left" class=" xl:w-1/2 lg:w-1/2 w-full flex flex-col justify-center mt-16">
                 <h1 class="text-xl xl:text-2xl font-black pb-[10px] text-center xl:text-left lg:text-left  relative">
                     Introduction to
                     getlinked <br> <span class="text-[#D434FE]">tech Hackathon 1.0</span>
                     <img src="./images/star pu.svg" alt="" class="absolute w-[4%] right-0 top-5 ">
                 </h1>
-                <p class=" text-center xl:text-left lg:text-left leading-7">Our tech hackathon is a melting pot of
+                <p data-aos="fade-up" data-aos-duration="3000" class=" text-center xl:text-left lg:text-left leading-7">Our tech hackathon is a melting pot of
                     visionaries,
                     and its purpose is as
                     clear as day: to shape the future. Whether you're a coding genius, a
@@ -112,14 +113,14 @@
             </div>
         </section>
         <section id="guidelines" class=" flex gap-5 xl:flex-row lg:flex-row relative overflow-hidden flex-col-reverse xl:px-24 lg:px-20 md:px-16 px-4 pb-14 border-gray-700 border-b">
-            <div id="guidelines-left" class=" xl:w-1/2 lg:w-1/2 w-full flex flex-col justify-center">
+            <div id="guidelines-left" data-aos="fade-right" class=" xl:w-1/2 lg:w-1/2 w-full flex flex-col justify-center">
                 <h1 class="text-xl xl:text-2xl font-black pb-[10px] text-center xl:text-left lg:text-left  relative">
                     Rules and<br> <span class="text-[#D434FE]">Guidelines</span>
                     <img src="./images/star-ash.svg" alt=""
                         class="absolute w-[3%] left-0 xl:left-[300px] lg:left-[300px] lg:top-[0px] xl:top-[0px] top-[-100px]">
                     <img src="./images/star.png" alt="" class="absolute w-[4%] right-0 top-5 ">
                 </h1>
-                <p class="text-center xl:text-left lg:text-left leading-7">Our tech hackathon is a melting pot of
+                <p data-aos="fade-up" data-aos-duration="3000" class="text-center xl:text-left lg:text-left leading-7">Our tech hackathon is a melting pot of
                     visionaries,
                     and its purpose is as
                     clear as day: to shape the future. Whether you're a coding genius, a
@@ -136,12 +137,12 @@
             <img src="./images/Purple-Lens-Flare.svg" alt="" class="xl:w-[800px] z-[-1]  lg:w-[700px] absolute top-[-10%] lg:top-[-40%] xl:left-0 lg:left-[10px] left-[-40px]">
             <img src="./images/Purple-Lens-Flare.svg" alt="" class="xl:w-[800px] z-[-1]  lg:w-[600px] absolute top-[20%] lg:top-[10%] lg:right-[-30%] right-[-50%]">
 
-            <div id="guidelines-right" class=" xl:w-1/2 lg:w-1/2 flex justify-center xl:block lg:block relative">
+            <div id="guidelines-right" data-aos="flip-down" data-aos-duration="2000" class=" xl:w-1/2 lg:w-1/2 flex justify-center xl:block lg:block relative">
                 <img src="./images/woman-reading.svg" alt="">
             </div>
         </section>
         <section id="judging-criteria" class=" xl:flex lg:flex block gap-10 relative overflow-hidden xl:px-24 lg:px-20 md:px-16 px-4 py-14 border-gray-700 border-b">
-            <div id="judging-criteria-left" class=" xl:w-1/2 lg:w-1/2 flex justify-center xl:block lg:block relative">
+            <div id="judging-criteria-left" data-aos="fade-right" class=" xl:w-1/2 lg:w-1/2 flex justify-center xl:block lg:block relative">
                 <img src="./images/star pu.svg" alt=""
                     class="absolute w-[3%] top-[-35px] xl:left-0 lg:left-0 xl:top-0 lg:top-0">
                 <img src="./images/star-ash.svg" alt=""
@@ -155,28 +156,28 @@
             <img src="./images/Purple-Lens-Flare.svg" alt="" class="xl:w-[800px] lg:w-[700px] absolute z-[-1] top-[10%] xl:top-[0] lg:top-[30%] xl:left-0 lg:left-[-5%] left-[-40px]">
             <img src="./images/Purple-Lens-Flare.svg" alt="" class="xl:w-[800px] lg:w-[600px] absolute z-[-1] bottom-0 lg:bottom-[-20%] lg:right-[-25%] right-[-60%]">
 
-            <div id="judging-criteria-right" class=" xl:w-1/2 lg:w-1/2 w-full flex flex-col justify-center relative">
+            <div id="judging-criteria-right" data-aos="fade-left" class=" xl:w-1/2 lg:w-1/2 w-full flex flex-col justify-center relative">
                 <h1 class="text-xl xl:text-2xl font-black pb-[10px] text-center xl:text-left lg:text-left  relative">
                     Judging Criteria <br> <span class="text-[#D434FE]">Key attributes</span>
                 </h1>
                 <img src="./images/star.png" alt=""
                     class="absolute w-[4%] right-0 bottom-5 xl:left-[-100px] lg:left-[-100px]  ">
                 <section>
-                    <article class="mb-4">
+                    <article data-aos="fade-up" data-aos-duration="1000" class="mb-4">
                         <h3 class="text-center xl:text-left lg:text-left"><b class="text-[#FF26B9]">Innovation and
                                 Creativity:</b> Evaluate the uniqueness and
                             creativity of the
                             solution. Consider whether it addresses a real-world problem in a novel
                             way or introduces innovative features.</h3>
                     </article>
-                    <article class="mb-4">
+                    <article data-aos="fade-up" data-aos-duration="1000" class="mb-4">
                         <h3 class="text-center xl:text-left lg:text-left"><b class="text-[#FF26B9]">Functionality:</b>
                             Assess how well the solution works. Does it
                             perform its
                             intended functions effectively and without major issues? Judges would
                             consider the completeness and robustness of the solution.</h3>
                     </article>
-                    <article class="mb-4">
+                    <article data-aos="fade-up" data-aos-duration="1000" class="mb-4">
                         <h3 class="text-center xl:text-left lg:text-left"><b class="text-[#FF26B9]">Impact and
                                 Relevance:</b> Determine the potential impact of the
                             solution
@@ -184,28 +185,28 @@
                             to the target audience? Judges would assess the potential social,
                             economic, or environmental benefits.</h3>
                     </article>
-                    <article class="mb-4">
+                    <article data-aos="fade-up" data-aos-duration="1000" class="mb-4">
                         <h3 class="text-center xl:text-left lg:text-left"><b class="text-[#FF26B9]"> Technical
                                 Complexity:</b> Evaluate the technical sophistication
                             of the solution.
                             Judges would consider the complexity of the code, the use of advanced
                             technologies or algorithms, and the scalability of the solution.</h3>
                     </article>
-                    <article class="mb-4">
+                    <article data-aos="fade-up" data-aos-duration="1000" class="mb-4">
                         <h3 class="text-center xl:text-left lg:text-left"><b class="text-[#FF26B9]">Adherence to
                                 Hackathon Rules:</b> Judges will Ensure that the team
                             adhered
                             to the rules and guidelines of the hackathon, including deadlines, use of
                             specific technologies or APIs, and any other competition-specific requirements.</h3>
                     </article>
-                    <a href=""
+                    <a data-aos="zoom-in" data-aos-duration="2000" href=""
                         class="grad-btn bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] w-[132px] h-[43px] md:w-[172px] md:h-[53px] rounded flex justify-center items-center mx-auto xl:mx-0 lg:mx-0">Read
                         More</a>
                 </section>
             </div>
         </section>
-        <section id="frequently-ask-quest" class=" flex xl:flex-row lg:flex-row flex-col xl:px-24 lg:px-20 md:px-16 px-4 py-8 border-gray-700 border-b">
-            <div id="frequently-ask-left" class=" xl:w-[40%] lg:w-[40%] w-full flex flex-col justify-center">
+        <section id="faq" class=" flex xl:flex-row lg:flex-row flex-col xl:px-24 lg:px-20 md:px-16 px-4 py-8 border-gray-700 border-b">
+            <div id="frequently-ask-left" data-aos="fade-right" class=" xl:w-[40%] lg:w-[40%] w-full flex flex-col justify-center">
                 <h1 class="text-xl xl:text-2xl font-black pb-[10px] text-center xl:text-left lg:text-left  relative">
                     Frequently Asked<br> <span class="text-[#D434FE]">Question</span>
                     <img src="./images/star pu.svg" alt="" class="absolute w-[4%] left-[-50px] top-0 ">
@@ -261,7 +262,7 @@
                     </li>
                 </ul>
             </div>
-            <div id="frequently-ask-right" class=" xl:w-[60%] lg:w-[60%] flex justify-center xl:block lg:block relative pt-28">
+            <div id="frequently-ask-right" data-aos="zoom-in" data-aos-duration="2000" class=" xl:w-[60%] lg:w-[60%] flex justify-center xl:block lg:block relative pt-28">
                 <img src="./images/star-ash.svg" alt=""
                     class="absolute w-[3%] left-5 xl:left-[40px] lg:left-[40px] xl:bottom-[300px] lg:bottom-[300px] bottom-[140px]">
                 <img src="./images/star.png" alt="" class="absolute w-[4%] right-10 xl:right-28 lg:right-28 bottom-0 ">
@@ -288,88 +289,82 @@
                 class="absolute w-[5%] lg:w-[2%] top-[50%] right-16 lg:right-[250px] lg:top-[43%]">
             <img src="./images/star-ash.svg" alt=""
                 class="absolute w-[5%] lg:w-[2%] left-2 bottom-10 lg:left-[180px] lg:bottom-32">
-            <div id="timetable">
-                <section id="timetable-one" class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
+            <div id="timetable" data-aos="fade-up">
+                <section id="timetable-one" data-aos="fade-right" class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
                     <div class="col-start-2  xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right">
                         <h3 class="text-[#D434FE] font-bold">Hackathon Announcement</h3>
                         <p class="">The getlinked tech hackathon 1.0 is formally announced to the general public and
                             teams begin to get ready to register</p>
                     </div>
-                    <span
-                        class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2  xl:w-[10%] lg:w-[10%]">
+                    <span data-aos="zoom-in" data-aos-duration="3000" class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2  xl:w-[10%] lg:w-[10%]">
                         <span class="h-[120px] w-[2.5px] lg:w-[5px] bg-[#D434FE] block "></span>
                         <span
                             class="h-[24px] w-[24px] lg:h-[53px] lg:w-[53px] bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] flex justify-center items-center rounded-full">1</span>
                     </span>
-                    <h3 class="text-[#D434FE]  font-bold col-start-2 xl:w-[45%] lg:w-[45%]">November 18, 2023</h3>
+                    <h3 data-aos="fade-left" class="text-[#D434FE]  font-bold col-start-2 xl:w-[45%] lg:w-[45%]">November 18, 2023</h3>
                 </section>
                 <section id="timetable-two"  class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
-                    <h3 class="text-[#D434FE] font-bold col-start-2  xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right">
+                    <h3 data-aos="fade-right" class="text-[#D434FE] font-bold col-start-2  xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right">
                         November 18, 2023</h3>
-                    <span
-                        class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2 xl:w-[10%] lg:w-[10%]">
+                    <span data-aos="zoom-in" data-aos-duration="3000" class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2 xl:w-[10%] lg:w-[10%]">
                         <span class="h-[120px] w-[2.5px] lg:w-[5px] bg-[#D434FE] block "></span>
                         <span
                             class="h-[24px] w-[24px] lg:h-[53px] lg:w-[53px]  bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] flex justify-center items-center rounded-full">2</span>
                     </span>
-                    <div class="col-start-2 row-start-1  xl:w-[45%] lg:w-[45%]">
+                    <div data-aos="fade-left" class="col-start-2 row-start-1  xl:w-[45%] lg:w-[45%]">
                         <h3 class="text-[#D434FE] font-bold">Teams Registration begins</h3>
                         <p class="">Interested teams can now show their interest in the getlinked tech hackathon 1.0
                             2023 by proceeding to register</p>
                     </div>
                 </section>
                 <section id="timetable-three"  class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
-                    <div class="col-start-2 xl:w-[45%] lg:w-[45%] w-[90%] xl:text-right lg:text-right">
+                    <div data-aos="fade-right" class="col-start-2 xl:w-[45%] lg:w-[45%] w-[90%] xl:text-right lg:text-right">
                         <h3 class="text-[#D434FE] font-bold">Teams Registration ends</h3>
                         <p class="">Interested Participants are no longer Allowed to register </p>
                     </div>
-                    <span
-                        class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2 xl:w-[10%] lg:w-[10%]">
+                    <span data-aos="zoom-in" data-aos-duration="3000" class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2 xl:w-[10%] lg:w-[10%]">
                         <span class="h-[77px] w-[2.5px] lg:w-[5px] bg-[#D434FE] block "></span>
                         <span
                             class="h-[24px] w-[24px] lg:h-[53px] lg:w-[53px]  bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] flex justify-center items-center rounded-full">3</span>
                     </span>
-                    <h3 class="text-[#D434FE] font-bold col-start-2 xl:w-[45%] lg:w-[45%]">November 18, 2023</h3>
+                    <h3 data-aos="fade-left" class="text-[#D434FE] font-bold col-start-2 xl:w-[45%] lg:w-[45%]">November 18, 2023</h3>
                 </section>
                 <section id="timetable-four"  class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
-                    <h3 class="text-[#D434FE] font-bold col-start-2 xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right ">
+                    <h3 data-aos="fade-right" class="text-[#D434FE] font-bold col-start-2 xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right ">
                         November 18, 2023</h3>
-                    <span
-                        class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2 xl:w-[10%] lg:w-[10%]">
+                    <span data-aos="zoom-in" data-aos-duration="3000" class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2 xl:w-[10%] lg:w-[10%]">
                         <span class="h-[130px] w-[2.5px] lg:w-[5px] bg-[#D434FE] block "></span>
                         <span
                             class="h-[24px] w-[24px] lg:h-[53px] lg:w-[53px]  bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] flex justify-center items-center rounded-full">4</span>
                     </span>
-                    <div class="col-start-2 row-start-1  xl:w-[45%] lg:w-[45%]">
+                    <div data-aos="fade-left" class="col-start-2 row-start-1  xl:w-[45%] lg:w-[45%]">
                         <h3 class="text-[#D434FE] font-bold">Announcement of the accepted teams and ideas</h3>
                         <p class="">All teams whom idea has been accepted into getlinked tech hackathon 1.0 2023 are
                             formally announced</p>
                     </div>
                 </section>
                 <section id="timetable-five"  class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
-                    <div class="col-start-2 xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right">
+                    <div data-aos="fade-right" class="col-start-2 xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right">
                         <h3 class="text-[#D434FE] font-bold">Getlinked Hackathon 1.0 Offically Begins</h3>
                         <p class="">Accepted teams can now proceed to build their ground breaking skill driven solutions
                         </p>
                     </div>
-                    <span
-                        class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2 xl:w-[10%] lg:w-[10%]">
+                    <span data-aos="zoom-in" data-aos-duration="3000" class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2 xl:w-[10%] lg:w-[10%]">
                         <span class="h-[120px] w-[2.5px] lg:w-[5px] bg-[#D434FE] block "></span>
                         <span
                             class="h-[24px] w-[24px] lg:h-[53px] lg:w-[53px]  bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] flex justify-center items-center rounded-full">5</span>
                     </span>
-                    <h3 class="text-[#D434FE] font-bold col-start-2 xl:w-[45%] lg:w-[45%] ">November 18, 2023</h3>
+                    <h3 data-aos="fade-left" class="text-[#D434FE] font-bold col-start-2 xl:w-[45%] lg:w-[45%] ">November 18, 2023</h3>
                 </section>
                 <section id="timetable-six"  class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
-                    <h3 class="text-[#D434FE] font-bold col-start-2  xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right">
+                    <h3 data-aos="fade-right" class="text-[#D434FE] font-bold col-start-2  xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right">
                         November 18, 2023</h3>
-                    <span
-                        class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2 xl:w-[10%] lg:w-[10%]">
+                    <span data-aos="zoom-in" data-aos-duration="3000" class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2 xl:w-[10%] lg:w-[10%]">
                         <span class="h-[130px] w-[2.5px] lg:w-[5px] bg-[#D434FE] block "></span>
                         <span
                             class="h-[24px] w-[24px] lg:h-[53px] lg:w-[53px]  bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] flex justify-center items-center rounded-full">6</span>
                     </span>
-                    <div class="col-start-2 row-start-1 xl:w-[45%] lg:w-[45%]">
+                    <div data-aos="fade-left" class="col-start-2 row-start-1 xl:w-[45%] lg:w-[45%]">
                         <h3 class="text-[#D434FE] font-bold">Demo Day</h3>
                         <p class="">Teams get the opportunity to pitch their projects to judges. The winner of the
                             hackathon will also be announced on this day</p>
@@ -396,7 +391,7 @@
 
 
             <div class="flex flex-col xl:flex-row lg:flex-row lg:gap-5 ">
-                <div
+                <div data-aos="zoom-in" data-aos-duration="2000"
                     class="lg:w-[45%] w-[100%] lg:h-[420px] h-[370px] pt-28 md:h-[500px] md:my-10 relative flex flex-col justify-center items-center lg:items-start">
                     <img src="./images/star.png" alt="" class="absolute top-[390px] lg:left-0 left-14 w-[4%]">
                     <img src="./images/star.png" alt=""
@@ -406,9 +401,9 @@
 
                 <img src="./images/star-ash.svg" alt=""
                     class="absolute lg:bottom-6 bottom-2 lg:right-[250px] right-24 w-[2%]">
-                <div class="lg:w-[55%] w-[100%] xl:mt-5 justify-center flex gap-3 relative pt-28 lg:pt-[140px]">
+                <div data-aos="fade-left" class="lg:w-[55%] w-[100%] xl:mt-5 justify-center flex gap-3 relative pt-28 lg:pt-[140px]">
                     <img src="./images/star.png" alt="" class="absolute lg:top-20 lg:right-0 right-14 w-[4%]">
-                    <div
+                    <div data-aos="fade-up" data-aos-duration="1000"
                         class="w-[90px] h-[130px] lg:w-[152px] lg:h-[190px] xl:w-[200px] mt-4 xl:h-[250px] md:w-[202px] md:h-[270px] border-2 shrink-0 border-[#D434FE] bg-[#8f3aff20] relative rounded lg:rounded-xl text-center flex flex-col justify-end pb-4 lg:pb-[10px] xl:pb-[50px] md:pb-[50px]">
                         <img src="./images/silver_medal 1.svg" alt=""
                             class="absolute top-[-35%] lg:top-[-25%] lg:top-[-35%]">
@@ -416,7 +411,7 @@
                         <h2 class="lg:text-xl md:text-2xl">Runner</h2>
                         <h1 class="lg:text-2xl md:text-2xl font-bold text-[#D434FE]">N300,000</h1>
                     </div>
-                    <div
+                    <div data-aos="fade-up" data-aos-duration="3000"
                         class="w-[90px] h-[155px] lg:w-[152px] lg:h-[210px] xl:w-[212px] xl:h-[300px] relative md:w-[202px] md:h-[280px] border-2 shrink-0 border-[#903AFF] bg-[#8f3aff20] rounded lg:rounded-xl text-center flex flex-col justify-end pb-4 lg:pb-[10px] xl:pb-[50px] md:pb-[50px]">
                         <img src="./images/gold_medal 1.svg" alt=""
                             class="absolute top-[-35%] xl:top-[-50%] lg:top-[-45%]">
@@ -424,7 +419,7 @@
                         <h2 class="lg:text-xl md:text-2xl">Runner</h2>
                         <h1 class="lg:text-2xl md:text-2xl font-bold text-[#903AFF]">N400,000</h1>
                     </div>
-                    <div
+                    <div data-aos="fade-up" data-aos-duration="1000"
                         class="w-[90px] h-[130px] lg:w-[152px] lg:h-[190px] xl:w-[200px] mt-4 xl:h-[250px] md:w-[202px] md:h-[270px]  border-2 shrink-0 border-[#D434FE] bg-[#8f3aff20] relative rounded lg:rounded-xl text-center flex flex-col justify-end pb-4 lg:pb-[10px] xl:pb-[50px] md:pb-[50px]">
                         <img src="./images/bronze_medal 1.svg" alt=""
                             class="absolute top-[-35%] xl:top-[-25%] lg:top-[-35%]">
@@ -445,7 +440,7 @@
                 <img src="./images/Purple-Lens-Flare.svg" alt="" class="xl:w-[800px]  lg:w-[700px] absolute z-[-1] top-[-10%] lg:top-0 xl:top-[10px] xl:left-0 lg:left-[-10%] left-[-40px]">
                 <img src="./images/Purple-Lens-Flare.svg" alt="" class="xl:w-[800px] lg:w-[600px] absolute z-[-1]  bottom-[-10%] lg:bottom-[-20%] lg:right-[-25%] right-[-60%]">
 
-            <div id="partners-logo"class="grid grid-cols-3 grid-rows-2 items-center relative border-2 rounded-xl border-[#D434FE] p-6 lg:p-[80px] xl:p-[120px] mt-[41px] sm:mt-[65px]">
+            <div data-aos="zoom-in" data-aos-duration="3000" id="partners-logo" class="grid grid-cols-3 grid-rows-2 items-center relative border-2 rounded-xl border-[#D434FE] p-6 lg:p-[80px] xl:p-[120px] mt-[41px] sm:mt-[65px]">
                 <span class=" border-b-4 border-[#D434FE] flex justify-center items-center pb-4"><img
                         src="./images/Liberty company logo white colour.svg" alt=""
                         class="w-[50px] sm:w-[120px]"></span>
@@ -474,7 +469,7 @@
 
         </section>
         <section id="privacy" onmouseenter="privacyOverEffect()" class=" xl:flex lg:flex justify-center relative block gap-10 xl:px-24 lg:px-20 md:px-16 px-4 pt-14 pb-32 ">
-            <div id="privacy-left" class="lg:w-[50%] w-full flex flex-col justify-center relative lg:pt-8 xl:pt-14">
+            <div id="privacy-left" data-aos="fade-right" class="lg:w-[50%] w-full flex flex-col justify-center relative lg:pt-8 xl:pt-14">
                 <h1 class="text-xl xl:text-2xl font-black pb-[10px] text-center lg:text-left  relative">
                     Privacy Policy and <br> <span class="text-[#D434FE]">Terms</span>
                 </h1>
@@ -518,7 +513,7 @@
                     class="absolute w-[3%] left-[-4%] md:left-[-10%] bottom-[200px] ">
                 <img src="./images/star pu.svg" alt="" class="absolute w-[3%] right-2 top-[200px] lg:top-10 ">
             </div>
-            <div id="privacy-right" class="lg:w-[50%] w-full mx-auto sm:w-[80%] mt-20 lg:mt-0 bg-[url('./images/security.svg')] relative bg-contain bg-no-repeat">
+            <div id="privacy-right" data-aos="zoom-out" data-aos-duration="3000" class="lg:w-[50%] w-full mx-auto sm:w-[80%] mt-20 lg:mt-0 bg-[url('./images/security.svg')] relative bg-contain bg-no-repeat">
                 <img src="./images/privacy.svg" alt="" class="relative top-[120px] lg:top-[170px] xl:top-[230px]">
                 <img src="./images/star-ash.svg" alt="" class="absolute right-0 bottom-0 lg:bottom-[30%] w-[4%]">
                 <img src="./images/star.png" alt="" class="absolute right-[20%] top-[14%] w-[4%]">
@@ -574,6 +569,10 @@
     </footer>
 
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

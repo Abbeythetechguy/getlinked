@@ -22,6 +22,7 @@ $font-family: Montserrat, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
 }
 
 html {
+    scroll-behavior: smooth;
 
     body {
         overflow-x: hidden;
@@ -174,114 +175,17 @@ html {
                         &.open {
 
                             #universe-like-stuff {
-                                transition: 10s;
-                                transform: rotate(1360deg);
+                                transition: 3s;
+                                transform: rotate(180deg);
 
                             }
                         }
                     }
                 }
             }
-
-            #intro {
-                overflow: hidden;
-
-                #intro-left {
-                    @include transition-ease;
-                    transform: translateX(-110%);
-
-                    &.open {
-                        @include transition-ease;
-                        transform: translateX(0);
-                    }
-                }
-
-                #intro-right {
-                    @include transition-ease;
-                    transform: translateX(120%);
-
-                    &.open {
-                        @include transition-ease;
-                        transform: translateX(0);
-                    }
-                }
-            }
-
-            #guidelines {
-                overflow: hidden;
-
-                #guidelines-left {
-                    @include transition-ease;
-                    transform: translateY(120%);
-
-                    &.open {
-                        @include transition-ease;
-                        transform: translateY(0);
-                    }
-                }
-
-                #guidelines-right {
-                    @include transition-ease;
-                    transform: scale(0);
-                    // transform: translateX(120%);
-
-                    &.open {
-                        transform: scale(1);
-                        @include transition-ease;
-                        // transform: translateX(0);
-                    }
-                }
-            }
-
-            #judging-criteria {
-                overflow: hidden;
-
-                #judging-criteria-left {
-                    @include transition-ease;
-                    transform: translatey(-120%);
-
-                    &.open {
-                        @include transition-ease;
-                        transform: translatey(0);
-                    }
-                }
-
-                #judging-criteria-right {
-                    @include transition-ease;
-                    transform: translateX(120%);
-
-                    &.open {
-                        @include transition-ease;
-                        transform: translateX(0);
-                    }
-                }
-            }
-
-            #frequently-ask-quest {
-
-                #frequently-ask-left {
-                    @include transition-ease;
-                    transform: translateX(-130%);
-
-                    &.open {
-                        @include transition-ease;
-                        transform: translateX(0);
-                    }
-                }
-
-                #frequently-ask-right {
-                    @include transition-ease;
-                    transform: scale(0);
-
-                    &.open {
-                        @include transition-ease;
-                        transform: scale(1);
-                    }
-                }
+            #faq {
 
                 .FAQs-dropdown {
-
-
                     #frequently-ask-dropdown-item1 {
                         display: none;
 
@@ -328,115 +232,6 @@ html {
                         &.open {
                             display: block;
                         }
-                    }
-                }
-            }
-
-            #timeline {
-
-                #timetable {
-
-                    #timetable-one {
-                        transition: 0.5s ease-in-out;
-                        transform: scale(0);
-
-                        &.open {
-                            transition: 0.5s ease-in-out;
-                            transform: scale(1);
-
-                        }
-                    }
-
-                    #timetable-two {
-                        transition: 0.7s ease-in-out;
-                        transform: scale(0);
-
-                        &.open {
-                            transition: 0.7s ease-in-out;
-                            transform: scale(1);
-
-                        }
-                    }
-
-                    #timetable-three {
-                        transition: 1s ease-in-out;
-                        transform: scale(0);
-
-                        &.open {
-                            transition: 1s ease-in-out;
-                            transform: scale(1);
-
-                        }
-                    }
-
-                    #timetable-four {
-                        transition: 1.3s ease-in-out;
-                        transform: scale(0);
-
-                        &.open {
-                            transition: 1.3s ease-in-out;
-                            transform: scale(1);
-
-                        }
-                    }
-
-                    #timetable-five {
-                        transition: 1.7s ease-in-out;
-                        transform: scale(0);
-
-                        &.open {
-                            transition: 1.7s ease-in-out;
-                            transform: scale(1);
-
-                        }
-                    }
-
-                    #timetable-six {
-                        transition: 2s ease-in-out;
-                        transform: scale(0);
-
-                        &.open {
-                            transition: 2s ease-in-out;
-                            transform: scale(1);
-
-                        }
-                    }
-                }
-            }
-
-            #partners {
-
-                #partners-logo {
-                    @include transition-ease;
-                    transform: scale(0);
-
-                    &.open {
-                        @include transition-ease;
-                        transform: scale(1);
-                    }
-                }
-            }
-
-            #privacy {
-
-                #privacy-left {
-                    @include transition-ease;
-                    transform: translateX(-120%);
-
-                    &.open {
-                        @include transition-ease;
-                        transform: translateX(0);
-                    }
-                }
-
-                #privacy-right {
-                    @include transition-ease;
-                    transform: scale(0);
-
-                    &.open {
-                        transform: scale(1);
-                        @include transition-ease;
-                        // transform: translateX(0);
                     }
                 }
             }

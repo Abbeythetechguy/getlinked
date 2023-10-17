@@ -196,3 +196,18 @@ function showFAQDropdown5() {
 function showFAQDropdown6() {
   frequentlyAskedDropItem6.classList.toggle("open");
 }
+
+const updateTime = () => {
+  const date = new Date()
+  const utcTime = date.toISOString().substr(11, 2)
+  const utcMinTime = date.toISOString().substr(14, 2);
+  const utcSecTime = date.toISOString().substr(17, 2);
+  timeUtc.textContent = utcTime ;
+  minUtc.textContent = utcMinTime ;
+  secUtc.textContent = utcSecTime ;
+
+}
+  const minUtc = document.getElementById("timeMin")
+  const secUtc = document.getElementById("timeSec")
+  const timeUtc = document.getElementById("timer");
+  setInterval(updateTime, 1000);
