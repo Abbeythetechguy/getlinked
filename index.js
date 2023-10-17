@@ -66,6 +66,9 @@ function showHamb() {
   }
 }
 
+const closure = document.querySelectorAll('.mobile-nav a')
+closure.forEach(item => item.addEventListener('click', showHamb))
+
 // intro.addEventListener("onmouseover", mouseOverEffect())
 
 let slider = false;
